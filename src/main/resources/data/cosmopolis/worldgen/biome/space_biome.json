@@ -1,0 +1,27 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "precipitation": "none",
+  "temperature_modifier": "none",
+  "category": "plains",
+  "effects": {
+    "sky_color": 1973791,
+    "fog_color": 5593698,
+    "water_color": 732271,
+    "water_fog_color": 921155,
+    "grass_color": 4406589,
+    "foliage_color": 10308802
+  },
+  "spawners": {
+    "monster": [
+      {
+        "weight": 0,
+        "minCount": 0,
+        "maxCount": 0
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

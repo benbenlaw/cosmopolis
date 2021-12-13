@@ -1,0 +1,30 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:player",
+    "equipment": {
+      "head": {
+        "items": [
+          "cosmopolis:space_suit_helmet"
+        ]
+      },
+      "chest": {
+        "items": [
+          "cosmopolis:space_suit_chestplate"
+        ]
+      },
+      "legs": {
+        "items": [
+          "cosmopolis:space_suit_leggings"
+        ]
+      },
+      "feet": {
+        "items": [
+          "cosmopolis:space_suit_boots"
+        ]
+      }
+    }
+  }
+}
+

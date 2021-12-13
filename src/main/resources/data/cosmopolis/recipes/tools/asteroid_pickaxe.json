@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    " X ",
+    " X "
+  ],
+  "key": {
+    "#": {
+      "item": "cosmopolis:asteroid_block"
+    },
+    "X": {
+      "item": "cosmopolis:asteroid_rock"
+    }
+  },
+  "result": {
+    "item": "cosmopolis:asteroid_pickaxe"
+  }
+}
