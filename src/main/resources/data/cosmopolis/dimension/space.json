@@ -13,7 +13,8 @@
     "logical_height": 319,
     "infiniburn": "minecraft:infiniburn_overworld",
     "min_y": -64,
-    "height": 320
+    "height": 320,
+    "effects": "minecraft:the_nether"
   },
   "generator": {
     "type": "minecraft:flat",

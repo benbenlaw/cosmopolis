@@ -27,6 +27,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ASTEROID_BLOCK = registerBlock("asteroid_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f)));
 
+    public static final RegistryObject<Block> ESSENCE_ORE = registerBlock("essence_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f)));
+
 
 
 
