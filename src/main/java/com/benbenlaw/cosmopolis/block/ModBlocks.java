@@ -6,6 +6,7 @@ import com.benbenlaw.cosmopolis.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.common.Tags;
@@ -25,10 +26,10 @@ public class ModBlocks {
 //New Blocks
 
     public static final RegistryObject<Block> ASTEROID_BLOCK = registerBlock("asteroid_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));
 
-    public static final RegistryObject<Block> ESSENCE_ORE = registerBlock("essence_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f)));
+    public static final RegistryObject<Block> ARTIFICIAL_PLANKS  = registerBlock("artificial_planks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f, 3f).sound(SoundType.WOOD)));
 
 
 
