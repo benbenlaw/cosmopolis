@@ -29,7 +29,7 @@ public enum ModArmorMaterial implements ArmorMaterial {
     private final float knockbackResistance;
     private final LazyLoadedValue<Ingredient> repairMaterial;
 
-    private ModArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmountArray, int enchantability, SoundEvent soundEvent, float toughness, float knockbackResistance, Supplier<Ingredient> repairMaterial) {
+    ModArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmountArray, int enchantability, SoundEvent soundEvent, float toughness, float knockbackResistance, Supplier<Ingredient> repairMaterial) {
         this.name = name;
         this.maxDamageFactor = maxDamageFactor;
         this.damageReductionAmountArray = damageReductionAmountArray;
@@ -40,20 +40,28 @@ public enum ModArmorMaterial implements ArmorMaterial {
         this.repairMaterial = new LazyLoadedValue<>(repairMaterial);
     }
 
+    @Override
     public int getDurabilityForSlot(EquipmentSlot slotIn) {return MAX_DAMAGE_ARRAY[slotIn.getIndex()] * this.maxDamageFactor;}
 
+    @Override
     public int getDefenseForSlot(EquipmentSlot slotIn) {return this.damageReductionAmountArray[slotIn.getIndex()];}
 
+    @Override
     public int getEnchantmentValue() {return this.enchantability;}
 
+    @Override
     public SoundEvent getEquipSound() {return this.soundEvent;}
 
+    @Override
     public Ingredient getRepairIngredient() {return this.repairMaterial.get();}
 
+    @Override
     @OnlyIn(Dist.CLIENT)
     public String getName() {return Cosmopolis.MOD_ID + ":" + this.name;}
 
+    @Override
     public float getToughness() {return this.toughness;}
 
+    @Override
     public float getKnockbackResistance() {return this.knockbackResistance;}
 }
