@@ -1,6 +1,7 @@
 package com.benbenlaw.cosmopolis.item;
 
 import com.benbenlaw.cosmopolis.Cosmopolis;
+import com.benbenlaw.cosmopolis.item.custom.AsteroidRockItem;
 import com.benbenlaw.cosmopolis.item.custom.ModArmorItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
@@ -14,8 +15,10 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Cosmopolis.MOD_ID);
 
     public static final RegistryObject<Item> ASTEROID_ROCK = ITEMS.register("asteroid_rock", () -> new Item(
-            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
+            new AsteroidRockItem.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 
+    public static final RegistryObject<Item> ROCK = ITEMS.register("rock", () -> new Item(
+            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 
 //Armor
 
@@ -55,6 +58,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> ASTEROID_SHOVEL = ITEMS.register("asteroid_shovel", () ->
             new ShovelItem(ModTiers.ASTEROID, 1, 1f,
+            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
+
+//Misc
+
+    public static final RegistryObject<Item> WATER_DROP = ITEMS.register("water_drop", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 
 
