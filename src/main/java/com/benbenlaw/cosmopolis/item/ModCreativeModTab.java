@@ -7,7 +7,7 @@ public class ModCreativeModTab {
     public static final CreativeModeTab COSMOPOLIS = new CreativeModeTab("Cosmopolis") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.ASTEROID_ROCK.get());
+            return new ItemStack(ModItems.ROCK.get());
         }
     };
 }
