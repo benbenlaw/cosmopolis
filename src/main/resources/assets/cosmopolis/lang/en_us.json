@@ -7,6 +7,7 @@
   "item.cosmopolis.water_drop": "Water Drop",
   "item.cosmopolis.rock": "Rock",
   "item.cosmopolis.asteroid_rock": "Asteroid Rock",
+  "item.cosmopolis.organic_powder": "Organic Powder",
 
   "item.cosmopolis.space_suit_helmet": "Space Suit Helmet",
   "item.cosmopolis.space_suit_leggings": "Space Suit Leggings",
@@ -14,7 +15,7 @@
   "item.cosmopolis.space_suit_boots": "Space Suit Boots",
 
   "block.cosmopolis.asteroid_block": "Asteroid Block",
-  "block.cosmopolis.asteroid_planks": "Asteroid Planks",
+  "block.cosmopolis.artificial_planks": "Asteroid Planks",
 
   "itemGroup.Cosmopolis": "Cosmopolis"
 }
