@@ -3,6 +3,7 @@ package com.benbenlaw.cosmopolis.item;
 import com.benbenlaw.cosmopolis.Cosmopolis;
 
 import com.benbenlaw.cosmopolis.item.custom.AsteroidRock;
+import com.benbenlaw.cosmopolis.item.custom.MiniCoal;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,6 +19,8 @@ public class ModItems {
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 
     public static final RegistryObject<Item> ASTEROID_ROCK = ITEMS.register("asteroid_rock", () -> new AsteroidRock(true));
+    public static final RegistryObject<Item> MINI_COAL = ITEMS.register("mini_coal", () -> new MiniCoal(true));
+    public static final RegistryObject<Item> MINI_CHARCOAL = ITEMS.register("mini_charcoal", () -> new MiniCoal(true));
 
 //Armor
 

@@ -1,22 +1,22 @@
 package com.benbenlaw.cosmopolis.block;
 
 import com.benbenlaw.cosmopolis.Cosmopolis;
+
 import com.benbenlaw.cosmopolis.item.ModCreativeModTab;
 import com.benbenlaw.cosmopolis.item.ModItems;
-import net.minecraft.core.particles.ParticleOptions;
+import net.minecraft.core.Registry;
+import net.minecraft.core.particles.ParticleType;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.TorchBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.checkerframework.checker.signature.qual.Identifier;
 
 import java.awt.*;
 import java.util.function.Supplier;
@@ -32,15 +32,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> ASTEROID_BLOCK = registerBlock("asteroid_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));
 
-    public static final RegistryObject<Block> ARTIFICIAL_PLANKS  = registerBlock("artificial_planks",
+    public static final RegistryObject<Block> ARTIFICIAL_PLANKS = registerBlock("artificial_planks",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f, 3f).sound(SoundType.WOOD)));
-
-/*    public static final RegistryObject<Block> GLOWSTONE_TORCH  = registerBlock("glowstone_torch",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(0.0f, 0f).sound(SoundType.WOOD)
-                    .dynamicShape().lightLevel((state) -> 15)));
-
-*/
-
 
 
 
