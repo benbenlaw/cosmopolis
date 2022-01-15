@@ -6,10 +6,11 @@
   ],
   "key": {
     "W": {
-      "item": "cosmopolis:artifical_planks"
+      "item": "cosmopolis:artificial_planks"
     }
   },
   "result": {
-    "item": "minecraft:bowl"
+    "item": "minecraft:bowl",
+    "count": 2
   }
 }

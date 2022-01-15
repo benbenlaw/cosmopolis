@@ -73,7 +73,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> ASTEROID_STEW = ITEMS.register("asteroid_stew", () -> new BowlFoodItem(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)
-                    .food(new FoodProperties.Builder().nutrition(1).saturationMod(0.2F).build())));
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4F).build())));
 
 
     public static void register(IEventBus eventBus) {
