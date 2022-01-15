@@ -5,6 +5,7 @@ import com.benbenlaw.cosmopolis.Cosmopolis;
 import com.benbenlaw.cosmopolis.item.custom.AsteroidRock;
 import com.benbenlaw.cosmopolis.item.custom.MiniCoal;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -69,6 +70,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> ORGANIC_POWDER = ITEMS.register("organic_powder", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
+
+    public static final RegistryObject<Item> ASTEROID_STEW = ITEMS.register("asteroid_stew", () -> new BowlFoodItem(
+            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)
+                    .food(new FoodProperties.Builder().nutrition(1).saturationMod(0.2F).build())));
 
 
     public static void register(IEventBus eventBus) {

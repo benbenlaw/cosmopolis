@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cosmopolis:asteroid_rock"
+    },
+    {
+      "item": "cosmopolis:rock"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "cosmopolis:asteroid_stew"
+  }
+}
