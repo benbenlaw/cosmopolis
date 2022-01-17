@@ -71,6 +71,9 @@ public class ModItems {
     public static final RegistryObject<Item> ORGANIC_POWDER = ITEMS.register("organic_powder", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 
+    public static final RegistryObject<Item> VENUS_SPORES = ITEMS.register("venus_spores", () -> new Item(
+            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
+
     public static final RegistryObject<Item> ASTEROID_STEW = ITEMS.register("asteroid_stew", () -> new BowlFoodItem(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)
                     .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4F).build())));
