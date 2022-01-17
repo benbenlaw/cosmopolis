@@ -1,3 +1,6 @@
 {
-  "parent": "cosmopolis:block/venus_spores"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cosmopolis:item/venus_spores"
+  }
 }
