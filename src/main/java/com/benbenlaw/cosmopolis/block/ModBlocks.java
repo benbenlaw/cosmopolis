@@ -35,6 +35,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> ARTIFICIAL_PLANKS = registerBlock("artificial_planks",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f, 3f).sound(SoundType.WOOD)));
 
+    public static final RegistryObject<Block> VENUS_FUNGUS = registerBlock("venus_fungas",
+            () -> new Block(BlockBehaviour.Properties.of(Material.PLANT).strength(0.5f, 0.5f).sound(SoundType.CROP)));
+
+
 
 
 
