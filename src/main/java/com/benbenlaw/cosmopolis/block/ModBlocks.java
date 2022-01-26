@@ -4,9 +4,6 @@ import com.benbenlaw.cosmopolis.Cosmopolis;
 
 import com.benbenlaw.cosmopolis.item.ModCreativeModTab;
 import com.benbenlaw.cosmopolis.item.ModItems;
-import net.minecraft.core.Registry;
-import net.minecraft.core.particles.ParticleType;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -16,9 +13,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.checkerframework.checker.signature.qual.Identifier;
 
-import java.awt.*;
 import java.util.function.Supplier;
 
 public class ModBlocks {

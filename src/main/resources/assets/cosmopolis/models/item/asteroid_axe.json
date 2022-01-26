@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "cosmopolis:item/asteroid_axe"
+    "layer0": "cosmopolis:item/planetary_core_teleporter"
   }
 }
