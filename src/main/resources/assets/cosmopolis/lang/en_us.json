@@ -9,6 +9,7 @@
   "item.cosmopolis.asteroid_rock": "Asteroid Rock",
   "item.cosmopolis.organic_powder": "Organic Powder",
   "item.cosmopolis.venus_spores": "Venus Spores",
+  "item.cosmopolis.mars_spores": "Mars Spores",
 
   "item.cosmopolis.space_suit_helmet": "Space Suit Helmet",
   "item.cosmopolis.space_suit_leggings": "Space Suit Leggings",
@@ -23,6 +24,7 @@
   "block.cosmopolis.asteroid_block": "Asteroid Block",
   "block.cosmopolis.artificial_planks": "Asteroid Planks",
   "block.cosmopolis.venus_fungus": "Venus Fungus",
+  "block.cosmopolis.mars_fungus": "Mars Fungus",
 
   "itemGroup.Cosmopolis": "Cosmopolis"
 }

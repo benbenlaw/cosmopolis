@@ -74,6 +74,9 @@ public class ModItems {
     public static final RegistryObject<Item> VENUS_SPORES = ITEMS.register("venus_spores", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 
+    public static final RegistryObject<Item> MARS_SPORES = ITEMS.register("mars_spores", () -> new Item(
+            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
+
     public static final RegistryObject<Item> PLANETARY_CORE_TELEPORTER = ITEMS.register("planetary_core_teleporter", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 

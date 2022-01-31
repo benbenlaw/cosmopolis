@@ -33,6 +33,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> VENUS_FUNGUS = registerBlock("venus_fungus",
             () -> new Block(BlockBehaviour.Properties.of(Material.PLANT).strength(0.5f, 0.5f).sound(SoundType.CROP)));
 
+    public static final RegistryObject<Block> MARS_FUNGUS = registerBlock("mars_fungus",
+            () -> new Block(BlockBehaviour.Properties.of(Material.PLANT).strength(0.5f, 0.5f).sound(SoundType.CROP)));
+
 
 
 
