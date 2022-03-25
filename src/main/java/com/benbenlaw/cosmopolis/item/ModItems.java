@@ -65,6 +65,9 @@ public class ModItems {
 
 //Misc
 
+    public static final RegistryObject<Item> SPACE_SUIT_UPGRADE = ITEMS.register("space_suit_upgrade", () -> new Item(
+            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
+
     public static final RegistryObject<Item> WATER_DROP = ITEMS.register("water_drop", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 
@@ -81,7 +84,7 @@ public class ModItems {
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 
     public static final RegistryObject<Item> ASTEROID_STEW = ITEMS.register("asteroid_stew", () -> new BowlFoodItem(
-            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)
+            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS).stacksTo(1)
                     .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4F).build())));
 
 
