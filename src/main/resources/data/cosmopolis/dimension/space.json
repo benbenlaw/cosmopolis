@@ -24,10 +24,8 @@
       "features": false,
       "layers": [],
       "structure_overrides": [
-        "cosmopolis:asteroid_1",
-        "cosmopolis:asteroid_2",
-        "cosmopolis:asteroid_3",
-        "cosmopolis:asteroid_house"
+        "cosmopolis:asteroids",
+        "cosmopolis:structures"
       ]
     }
   }

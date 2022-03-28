@@ -1,0 +1,26 @@
+{
+  "structures": [
+    {
+      "structure": "cosmopolis:asteroid_3",
+      "weight": 32
+    },
+    {
+      "structure": "cosmopolis:asteroid_2",
+      "weight": 32
+    },
+    {
+      "structure": "cosmopolis:asteroid_1",
+      "weight": 32
+    },
+    {
+      "structure": "cosmopolis:asteroid_sphere",
+      "weight": 4
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 2,
+    "separation": 0,
+    "salt": 34563
+  }
+}
