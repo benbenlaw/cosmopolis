@@ -4,7 +4,7 @@
   "predicate": {
     "type": "minecraft:player",
     "location": {
-      "biome": "cosmopolis:space_biome"
+      "biome": "cosmopolis:space"
     }
   }
 }

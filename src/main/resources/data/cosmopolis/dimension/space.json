@@ -11,21 +11,22 @@
     "coordinate_scale": 1,
     "ambient_light": 0.4,
     "logical_height": 319,
-    "infiniburn": "minecraft:infiniburn_overworld",
+    "effects": "minecraft:the_nether",
+    "infiniburn": "#minecraft:infiniburn_overworld",
     "min_y": -64,
-    "height": 320,
-    "effects": "minecraft:the_nether"
+    "height": 320
   },
   "generator": {
     "type": "minecraft:flat",
     "settings": {
-      "biome": "cosmopolis:space_biome",
+      "biome": "cosmopolis:space",
       "lakes": false,
       "features": false,
       "layers": [],
-      "structures": {
-        "structures": {}
-      }
+      "structure_overrides": [
+        "cosmopolis:asteroids",
+        "cosmopolis:structures"
+      ]
     }
   }
 }

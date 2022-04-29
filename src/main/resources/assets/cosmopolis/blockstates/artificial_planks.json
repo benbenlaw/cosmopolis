@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": {"model": "cosmopolis:block/artificial_planks"}
+    "": {
+      "model": "cosmopolis:block/artificial_planks"
+    }
   }
 }

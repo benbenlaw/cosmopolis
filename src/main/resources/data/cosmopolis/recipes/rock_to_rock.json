@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "cosmopolis:asteroid_rock"
+  },
+  "result": "cosmopolis:rock",
+  "cookingtime": 200
+}

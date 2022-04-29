@@ -14,12 +14,12 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements ArmorMaterial {
 
-    spacesuit("space_suit", 7, new int[]{13, 15, 16, 11},12,
-            SoundEvents.ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> {
+    spacesuit("space_suit", 7, new int[]{3, 6, 8, 3},12,
+            SoundEvents.ARMOR_EQUIP_IRON, 3.0f, 0.0f, () -> {
         return Ingredient.of(ModItems.ASTEROID_ROCK.get());
     }) ;
 
-    private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
+    private static final int[] MAX_DAMAGE_ARRAY = new int[]{3, 6, 8, 3};
     private final String name;
     private final int maxDamageFactor;
     private final int[] damageReductionAmountArray;

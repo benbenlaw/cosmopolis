@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AR",
+    "RA"
+  ],
+  "key": {
+    "A": {
+      "item": "cosmopolis:rock"
+    },
+    "R": {
+      "item": "cosmopolis:asteroid_rock"
+    }
+  },
+  "result": {
+    "item": "minecraft:andesite"
+  }
+}

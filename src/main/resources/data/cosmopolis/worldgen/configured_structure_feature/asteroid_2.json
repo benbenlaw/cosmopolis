@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:bastion_remnant",
+  "config": {
+    "start_pool": "cosmopolis:asteroid_2",
+    "size": 1
+  },
+  "biomes": "#cosmopolis:is_space",
+  "adapt_noise": true,
+  "spawn_overrides": {}
+}

@@ -1,0 +1,23 @@
+{
+  "structures": [
+    {
+      "structure": "cosmopolis:asteroid_large",
+      "weight": 70
+    },
+    {
+      "structure": "cosmopolis:asteroid_house",
+      "weight": 15
+    },
+    {
+      "structure": "cosmopolis:asteroid_base",
+      "weight": 15
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 20,
+    "separation": 12,
+    "salt": 34563,
+    "spread_type": "triangular"
+  }
+}
