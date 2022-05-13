@@ -2,6 +2,8 @@ package com.benbenlaw.cosmopolis;
 
 import com.benbenlaw.cosmopolis.block.ModBlocks;
 import com.benbenlaw.cosmopolis.item.ModItems;
+import com.benbenlaw.cosmopolis.world.ModBiomes;
+import com.benbenlaw.cosmopolis.world.structures.ModStructures;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.InterModComms;
@@ -31,6 +33,8 @@ public class Cosmopolis {
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        ModBiomes.register(eventBus);
+        ModStructures.register(eventBus);
 
         // Register the enqueueIMC method for modloading
         eventBus.addListener(this::enqueueIMC);

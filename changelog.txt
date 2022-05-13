@@ -1,0 +1,6 @@
+Cosmopolis Mod Changelog
+
+(2.0)
+
+Re worked structures
+Improved kubejs oxygen system

@@ -5,22 +5,22 @@
     "type": "minecraft:player",
     "equipment": {
       "head": {
-        "items": [
+        "tag": [
           "cosmopolis:space_suit_helmet"
         ]
       },
       "chest": {
-        "items": [
+        "tag": [
           "cosmopolis:space_suit_chestplate"
         ]
       },
       "legs": {
-        "items": [
+        "tag": [
           "cosmopolis:space_suit_leggings"
         ]
       },
       "feet": {
-        "items": [
+        "tag": [
           "cosmopolis:space_suit_boots"
         ]
       }

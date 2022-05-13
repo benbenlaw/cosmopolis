@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:bastion_remnant",
+  "type": "cosmopolis:asteroids",
   "config": {
     "start_pool": "cosmopolis:asteroid_2",
     "size": 1
