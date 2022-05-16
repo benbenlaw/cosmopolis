@@ -1,5 +1,12 @@
 Cosmopolis Mod Changelog
 
+(3.0)
+
+Added teleporter block, right click to go to space and right click to return from space
+Space now will sufficate you if you dont wear a space suit, in peaceful and creative you wont be damaged in space even if you dont wear a space suit
+This works based on tags so if you want to add your own armour that will protect you in space you can add it
+
+
 (2.0)
 
 Re worked structures

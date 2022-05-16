@@ -2,6 +2,7 @@ package com.benbenlaw.cosmopolis.block;
 
 import com.benbenlaw.cosmopolis.Cosmopolis;
 
+import com.benbenlaw.cosmopolis.block.custom.TeleporterBlock;
 import com.benbenlaw.cosmopolis.item.ModCreativeModTab;
 import com.benbenlaw.cosmopolis.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -36,6 +37,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> MARS_FUNGUS = registerBlock("mars_fungus",
             () -> new Block(BlockBehaviour.Properties.of(Material.PLANT).strength(0.5f, 0.5f).sound(SoundType.CROP)));
 
+    public static final RegistryObject<Block> TELEPORTER = registerBlock("teleporter",
+            () -> new TeleporterBlock(BlockBehaviour.Properties.of(Material.STONE).strength(0.5f, 0.5f).sound(SoundType.STONE)));
 
 
 

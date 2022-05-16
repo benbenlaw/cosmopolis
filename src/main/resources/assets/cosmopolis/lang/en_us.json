@@ -26,6 +26,7 @@
   "block.cosmopolis.artificial_planks": "Asteroid Planks",
   "block.cosmopolis.venus_fungus": "Venus Fungus",
   "block.cosmopolis.mars_fungus": "Mars Fungus",
+  "block.cosmopolis.teleporter": "Teleporter",
 
   "itemGroup.Cosmopolis": "Cosmopolis"
 }
