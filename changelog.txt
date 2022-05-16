@@ -1,5 +1,9 @@
 Cosmopolis Mod Changelog
 
+(3.1)
+
+Added teleporter recipe
+
 (3.0)
 
 Added teleporter block, right click to go to space and right click to return from space
