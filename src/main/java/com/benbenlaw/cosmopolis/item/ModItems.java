@@ -4,6 +4,7 @@ import com.benbenlaw.cosmopolis.Cosmopolis;
 
 import com.benbenlaw.cosmopolis.item.custom.AsteroidRock;
 import com.benbenlaw.cosmopolis.item.custom.MiniCoal;
+import com.benbenlaw.cosmopolis.item.custom.SpaceCore;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
@@ -82,6 +83,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> PLANETARY_CORE_TELEPORTER = ITEMS.register("planetary_core_teleporter", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
+
+    public static final RegistryObject<Item> SPACE_CORE = ITEMS.register("space_core", SpaceCore::new);
 
     public static final RegistryObject<Item> ASTEROID_STEW = ITEMS.register("asteroid_stew", () -> new BowlFoodItem(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS).stacksTo(1)

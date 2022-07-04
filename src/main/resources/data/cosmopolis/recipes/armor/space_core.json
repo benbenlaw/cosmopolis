@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "cosmopolis:space_portal_frame"
+  },
+  "addition": {
+    "item": "cosmopolis:space_suit_upgrade"
+  },
+  "result": {
+    "item": "cosmopolis:space_core"
+  }
+}

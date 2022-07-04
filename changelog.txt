@@ -1,5 +1,14 @@
 Cosmopolis Mod Changelog
 
+4.0
+
+Remove teleporter block
+Added space portal frame (replaces teleporter block recipe in the smiting table)
+Added space core (Made in smithing table)
+Portal now required to go into space, uses space portal frame blocks and can be lit with a space core
+
+
+
 (3.1)
 
 Added teleporter recipe

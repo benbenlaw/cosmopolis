@@ -21,12 +21,13 @@
   "item.cosmopolis.mini_charcoal": "Mini Charcoal",
   "item.cosmopolis.asteroid_stew": "Asteroid Stew",
   "item.cosmopolis.planetary_core_teleporter": "Planetary Core Teleporter",
+  "item.cosmopolis.space_core": "Space Core",
 
   "block.cosmopolis.asteroid_block": "Asteroid Block",
   "block.cosmopolis.artificial_planks": "Asteroid Planks",
   "block.cosmopolis.venus_fungus": "Venus Fungus",
   "block.cosmopolis.mars_fungus": "Mars Fungus",
-  "block.cosmopolis.teleporter": "Teleporter",
+  "block.cosmopolis.space_portal_frame": "Space Portal Frame",
 
   "itemGroup.Cosmopolis": "Cosmopolis"
 }

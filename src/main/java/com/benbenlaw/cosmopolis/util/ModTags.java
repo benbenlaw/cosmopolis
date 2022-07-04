@@ -11,10 +11,10 @@ import net.minecraftforge.common.Tags;
 
 public class ModTags {
 
-    /*
+
 
     public static class Blocks {
-        public static final TagKey<Block> HELLO = null;
+        public static final TagKey<Block> PORTAL_FRAME_BLOCKS = tag("portal_frame_blocks");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(Cosmopolis.MOD_ID, name));
@@ -27,7 +27,7 @@ public class ModTags {
     }
 
 
-     */
+
 
     public static class Items {
         public static final TagKey<Item> SPACE_SUIT_HELMET = tag("space_suit_helmet");

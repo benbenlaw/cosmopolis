@@ -2,11 +2,16 @@ package com.benbenlaw.cosmopolis.block;
 
 import com.benbenlaw.cosmopolis.Cosmopolis;
 
-import com.benbenlaw.cosmopolis.block.custom.TeleporterBlock;
+import com.benbenlaw.cosmopolis.block.custom.SpacePortalBlock;
 import com.benbenlaw.cosmopolis.item.ModCreativeModTab;
 import com.benbenlaw.cosmopolis.item.ModItems;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -14,7 +19,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -36,11 +43,32 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MARS_FUNGUS = registerBlock("mars_fungus",
             () -> new Block(BlockBehaviour.Properties.of(Material.PLANT).strength(0.5f, 0.5f).sound(SoundType.CROP)));
+    public static final RegistryObject<Block> SPACE_PORTAL_FRAME = registerBlock("space_portal_frame",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(0.5f, 0.5f).sound(SoundType.STONE)));
 
-    public static final RegistryObject<Block> TELEPORTER = registerBlock("teleporter",
-            () -> new TeleporterBlock(BlockBehaviour.Properties.of(Material.STONE).strength(0.5f, 0.5f).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> SPACE_PORTAL = BLOCKS.register("space_portal",
+            SpacePortalBlock::new);
 
 
+
+
+
+    private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, String tooltipKey) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerBlockItem(name, toReturn, tooltipKey);
+        return toReturn;
+    }
+
+    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block, String tooltipKey) {
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
+                new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)){
+            @Override
+            public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                pTooltip.add(new TranslatableComponent(tooltipKey));
+            }
+        });
+
+    }
 
 
 
