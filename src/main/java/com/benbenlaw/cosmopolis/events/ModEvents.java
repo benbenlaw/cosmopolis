@@ -1,21 +1,13 @@
 package com.benbenlaw.cosmopolis.events;
 
 import com.benbenlaw.cosmopolis.Cosmopolis;
-import com.benbenlaw.cosmopolis.item.ModItems;
 import com.benbenlaw.cosmopolis.util.ModTags;
-import com.benbenlaw.cosmopolis.world.ModBiomes;
 import com.benbenlaw.cosmopolis.world.dimension.ModDimensions;
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;

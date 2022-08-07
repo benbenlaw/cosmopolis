@@ -1,5 +1,10 @@
 Cosmopolis Mod Changelog
 
+5.0
+
+Updated to 1.19 (initial release)
+improved height distribution of asteroids
+
 4.0
 
 Remove teleporter block

@@ -1,21 +1,5 @@
 {
-  "type": {
-    "ultrawarm": false,
-    "natural": true,
-    "piglin_safe": false,
-    "respawn_anchor_works": true,
-    "bed_works": false,
-    "has_raids": false,
-    "has_skylight": true,
-    "has_ceiling": false,
-    "coordinate_scale": 1,
-    "ambient_light": 0.4,
-    "logical_height": 319,
-    "effects": "minecraft:the_nether",
-    "infiniburn": "#minecraft:infiniburn_overworld",
-    "min_y": -64,
-    "height": 320
-  },
+  "type": "cosmopolis:space",
   "generator": {
     "type": "minecraft:flat",
     "settings": {

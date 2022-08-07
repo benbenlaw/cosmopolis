@@ -6,7 +6,6 @@ import com.benbenlaw.cosmopolis.block.custom.SpacePortalBlock;
 import com.benbenlaw.cosmopolis.item.ModCreativeModTab;
 import com.benbenlaw.cosmopolis.item.ModItems;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -64,7 +63,7 @@ public class ModBlocks {
                 new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)){
             @Override
             public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
-                pTooltip.add(new TranslatableComponent(tooltipKey));
+                pTooltip.add(Component.literal(tooltipKey));
             }
         });
 
