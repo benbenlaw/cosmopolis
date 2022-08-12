@@ -1,5 +1,10 @@
 Cosmopolis Mod Changelog
 
+6.0
+
+Fixed some stuctures spawning with extra block like blue wall
+Fixed dying in creative when in space without a suit
+
 5.0
 
 Updated to 1.19 (initial release)
