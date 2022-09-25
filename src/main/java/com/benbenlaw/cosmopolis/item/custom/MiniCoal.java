@@ -18,7 +18,7 @@ public class MiniCoal extends Item {
     }
     @Override
     public int getBurnTime(ItemStack itemStack, RecipeType<?> type) {
-        if(this.hasBurnTime == true) {
+        if(this.hasBurnTime) {
             return 200;
         }
 

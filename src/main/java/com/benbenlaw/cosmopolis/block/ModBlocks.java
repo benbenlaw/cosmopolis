@@ -23,13 +23,14 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.function.Supplier;
 
+@SuppressWarnings("unused")
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Cosmopolis.MOD_ID);
 
 
 
-//New Blocks
+    //New Blocks
 
     public static final RegistryObject<Block> ASTEROID_BLOCK = registerBlock("asteroid_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));

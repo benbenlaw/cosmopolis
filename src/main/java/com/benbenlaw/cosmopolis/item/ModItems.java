@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+@SuppressWarnings("unused")
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Cosmopolis.MOD_ID);
@@ -24,7 +25,7 @@ public class ModItems {
     public static final RegistryObject<Item> MINI_COAL = ITEMS.register("mini_coal", () -> new MiniCoal(true));
     public static final RegistryObject<Item> MINI_CHARCOAL = ITEMS.register("mini_charcoal", () -> new MiniCoal(true));
 
-//Armor
+    //Armor
 
     public static final RegistryObject<Item> SPACE_SUIT_BOOTS = ITEMS.register("space_suit_boots", () ->
             new ArmorItem(ModArmorMaterial.spacesuit, EquipmentSlot.FEET,

@@ -32,9 +32,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.Cancelable;
-
-import javax.annotation.Nullable;
-import java.util.Random;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class SpacePortalBlock extends Block {
     public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.HORIZONTAL_AXIS;
@@ -51,15 +50,11 @@ public class SpacePortalBlock extends Block {
         registerDefaultState(stateDefinition.any().setValue(AXIS, Direction.Axis.X));
     }
 
+    @SuppressWarnings("deprecation")
     @Override
-    public VoxelShape getShape(BlockState state, BlockGetter worldIn, BlockPos pos, CollisionContext context) {
-        switch(state.getValue(AXIS)) {
-            case Z:
-                return Z_AABB;
-            case X:
-            default:
-                return X_AABB;
-        }
+    public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter worldIn, @NotNull BlockPos pos,
+                                        @NotNull CollisionContext context) {
+        return state.getValue(AXIS) == Direction.Axis.Z ? Z_AABB : X_AABB;
     }
 
     public boolean trySpawnPortal(LevelAccessor worldIn, BlockPos pos) {
@@ -102,8 +97,10 @@ public class SpacePortalBlock extends Block {
         }
     }
 
+    @SuppressWarnings("deprecation")
     @Override
-    public BlockState updateShape(BlockState stateIn, Direction facing, BlockState facingState, LevelAccessor worldIn, BlockPos currentPos, BlockPos facingPos) {
+    public @NotNull BlockState updateShape(BlockState stateIn, Direction facing, @NotNull BlockState facingState,
+                                           @NotNull LevelAccessor worldIn, @NotNull BlockPos currentPos, @NotNull BlockPos facingPos) {
         Direction.Axis direction$axis = facing.getAxis();
         Direction.Axis direction$axis1 = stateIn.getValue(AXIS);
         boolean flag = direction$axis1 != direction$axis && direction$axis.isHorizontal();
@@ -111,8 +108,10 @@ public class SpacePortalBlock extends Block {
                 Blocks.AIR.defaultBlockState() : super.updateShape(stateIn, facing, facingState, worldIn, currentPos, facingPos);
     }
 
+
+    @SuppressWarnings("deprecation")
     @Override
-    public void entityInside(BlockState state, Level worldIn, BlockPos pos, Entity entity) {
+    public void entityInside(@NotNull BlockState state, @NotNull Level worldIn, @NotNull BlockPos pos, Entity entity) {
         if(!entity.isPassenger() && !entity.isVehicle() && entity.canChangeDimensions()) {
             if(entity.isOnPortalCooldown()) {
                 entity.setPortalCooldown();
@@ -122,18 +121,16 @@ public class SpacePortalBlock extends Block {
                     entity.portalEntrancePos = pos.immutable();
                 }
                 Level entityWorld = entity.level;
-                if(entityWorld != null) {
-                    MinecraftServer minecraftserver = entityWorld.getServer();
-                    ResourceKey<Level> destination = entity.level.dimension() == ModDimensions.SPACE
-                            ? Level.OVERWORLD : ModDimensions.SPACE;
-                    if(minecraftserver != null) {
-                        ServerLevel destinationWorld = minecraftserver.getLevel(destination);
-                        if(destinationWorld != null && minecraftserver.isNetherEnabled() && !entity.isPassenger()) {
-                            entity.level.getProfiler().push("kaupen_portal");
-                            entity.setPortalCooldown();
-                            entity.changeDimension(destinationWorld, new ModTeleporter(destinationWorld));
-                            entity.level.getProfiler().pop();
-                        }
+                MinecraftServer minecraftserver = entityWorld.getServer();
+                ResourceKey<Level> destination = entity.level.dimension() == ModDimensions.SPACE
+                        ? Level.OVERWORLD : ModDimensions.SPACE;
+                if(minecraftserver != null) {
+                    ServerLevel destinationWorld = minecraftserver.getLevel(destination);
+                    if(destinationWorld != null && minecraftserver.isNetherEnabled() && !entity.isPassenger()) {
+                        entity.level.getProfiler().push("kaupen_portal");
+                        entity.setPortalCooldown();
+                        entity.changeDimension(destinationWorld, new ModTeleporter(destinationWorld));
+                        entity.level.getProfiler().pop();
                     }
                 }
             }
@@ -141,7 +138,7 @@ public class SpacePortalBlock extends Block {
     }
 
     @OnlyIn(Dist.CLIENT)
-    public void animateTick(BlockState stateIn, Level worldIn, BlockPos pos, RandomSource rand) {
+    public void animateTick(@NotNull BlockState stateIn, @NotNull Level worldIn, @NotNull BlockPos pos, RandomSource rand) {
         if (rand.nextInt(100) == 0) {
             worldIn.playLocalSound((double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D,
                     (double)pos.getZ() + 0.5D, SoundEvents.PORTAL_AMBIENT,
@@ -169,27 +166,24 @@ public class SpacePortalBlock extends Block {
         }
     }
 
+    @SuppressWarnings("deprecation")
     @Override
-    public ItemStack getCloneItemStack(BlockGetter worldIn, BlockPos pos, BlockState state) {
+    public @NotNull ItemStack getCloneItemStack(@NotNull BlockGetter worldIn, @NotNull BlockPos pos,
+                                                @NotNull BlockState state) {
         return ItemStack.EMPTY;
     }
 
+    @SuppressWarnings("deprecation")
     @Override
-    public BlockState rotate(BlockState state, Rotation rot) {
-        switch(rot) {
-            case COUNTERCLOCKWISE_90:
-            case CLOCKWISE_90:
-                switch(state.getValue(AXIS)) {
-                    case Z:
-                        return state.setValue(AXIS, Direction.Axis.X);
-                    case X:
-                        return state.setValue(AXIS, Direction.Axis.Z);
-                    default:
-                        return state;
-                }
-            default:
-                return state;
-        }
+    public @NotNull BlockState rotate(@NotNull BlockState state, Rotation rot) {
+        return switch (rot) {
+            case COUNTERCLOCKWISE_90, CLOCKWISE_90 -> switch (state.getValue(AXIS)) {
+                case Z -> state.setValue(AXIS, Direction.Axis.X);
+                case X -> state.setValue(AXIS, Direction.Axis.Z);
+                default -> state;
+            };
+            default -> state;
+        };
     }
 
     @Override

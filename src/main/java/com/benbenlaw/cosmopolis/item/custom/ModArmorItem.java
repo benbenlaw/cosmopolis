@@ -12,6 +12,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Map;
 
@@ -26,10 +27,9 @@ public class ModArmorItem extends ArmorItem {
     }
 
     @Override
-    public void inventoryTick(ItemStack stack, Level world, Entity entity, int slot, boolean selected) {
+    public void inventoryTick(@NotNull ItemStack stack, Level world, @NotNull Entity entity, int slot, boolean selected) {
         if(!world.isClientSide()) {
-            if(entity instanceof Player) {
-                Player player = (Player)entity;
+            if(entity instanceof Player player) {
 
                 if(hasFullSuitOfArmorOn(player)) {
                     evaluateArmorEffects(player);

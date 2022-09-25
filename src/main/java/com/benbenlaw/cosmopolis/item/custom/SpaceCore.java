@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 public class SpaceCore extends Item {
     public SpaceCore() {
@@ -24,7 +25,7 @@ public class SpaceCore extends Item {
     }
 
     @Override
-    public InteractionResult useOn(UseOnContext context) {
+    public @NotNull InteractionResult useOn(UseOnContext context) {
         if(context.getPlayer() != null) {
             if(context.getPlayer().level.dimension() == ModDimensions.SPACE
                     || context.getPlayer().level.dimension() == Level.OVERWORLD) {

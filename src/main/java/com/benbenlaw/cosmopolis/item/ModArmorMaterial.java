@@ -9,6 +9,7 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
@@ -29,7 +30,7 @@ public enum ModArmorMaterial implements ArmorMaterial {
     private final float knockbackResistance;
     private final LazyLoadedValue<Ingredient> repairMaterial;
 
-    private ModArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmountArray, int enchantability, SoundEvent soundEvent, float toughness, float knockbackResistance, Supplier<Ingredient> repairMaterial) {
+    ModArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmountArray, int enchantability, SoundEvent soundEvent, float toughness, float knockbackResistance, Supplier<Ingredient> repairMaterial) {
         this.name = name;
         this.maxDamageFactor = maxDamageFactor;
         this.damageReductionAmountArray = damageReductionAmountArray;
@@ -46,12 +47,12 @@ public enum ModArmorMaterial implements ArmorMaterial {
 
     public int getEnchantmentValue() {return this.enchantability;}
 
-    public SoundEvent getEquipSound() {return this.soundEvent;}
+    public @NotNull SoundEvent getEquipSound() {return this.soundEvent;}
 
-    public Ingredient getRepairIngredient() {return this.repairMaterial.get();}
+    public @NotNull Ingredient getRepairIngredient() {return this.repairMaterial.get();}
 
     @OnlyIn(Dist.CLIENT)
-    public String getName() {return Cosmopolis.MOD_ID + ":" + this.name;}
+    public @NotNull String getName() {return Cosmopolis.MOD_ID + ":" + this.name;}
 
     public float getToughness() {return this.toughness;}
 
