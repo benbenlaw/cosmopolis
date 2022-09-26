@@ -2,7 +2,7 @@ package com.benbenlaw.cosmopolis.block;
 
 import com.benbenlaw.cosmopolis.Cosmopolis;
 
-import com.benbenlaw.cosmopolis.block.custom.*;
+import com.benbenlaw.cosmopolis.block.custom.SpacePortalBlock;
 import com.benbenlaw.cosmopolis.item.ModCreativeModTab;
 import com.benbenlaw.cosmopolis.item.ModItems;
 import net.minecraft.network.chat.Component;
@@ -23,13 +23,14 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.function.Supplier;
 
+@SuppressWarnings("unused")
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Cosmopolis.MOD_ID);
 
 
 
-    //Blocks with a item
+    //New Blocks
 
     public static final RegistryObject<Block> ASTEROID_BLOCK = registerBlock("asteroid_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));
@@ -42,34 +43,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MARS_FUNGUS = registerBlock("mars_fungus",
             () -> new Block(BlockBehaviour.Properties.of(Material.PLANT).strength(0.5f, 0.5f).sound(SoundType.CROP)));
-
     public static final RegistryObject<Block> SPACE_PORTAL_FRAME = registerBlock("space_portal_frame",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(0.5f, 0.5f).sound(SoundType.STONE)));
 
-    public static final RegistryObject<Block> MINING_BELT_PORTAL_FRAME = registerBlock("mining_belt_portal_frame",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(0.5f, 0.5f).sound(SoundType.STONE)));
-
-    public static final RegistryObject<Block> GLOWSTONE_LANTERN = registerBlock("glowstone_lantern",
-            () -> new GlowstoneLanternBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3.5f).sound(SoundType.STONE)
-                    .requiresCorrectToolForDrops()
-                    .lightLevel((state) -> 14)
-                    .noOcclusion()
-                    .sound(SoundType.LANTERN)));
-
-    //Blocks Without Items
-
     public static final RegistryObject<Block> SPACE_PORTAL = BLOCKS.register("space_portal",
             SpacePortalBlock::new);
-
-    public static final RegistryObject<Block> MINING_BELT_PORTAL = BLOCKS.register("mining_belt_portal",
-            MiningBeltPortalBlock::new);
-
-    public static final RegistryObject<Block> GLOWSTONE_TORCH = BLOCKS.register("glowstone_torch",
-            () -> new GlowstoneTorchBlock(BlockBehaviour.Properties.copy(Blocks.TORCH).lightLevel((state) -> 14)));
-
-    public static final RegistryObject<Block> GLOWSTONE_WALL_TORCH = BLOCKS.register("glowstone_wall_torch",
-            () -> new GlowstoneWallTorchBlock(BlockBehaviour.Properties.copy(Blocks.WALL_TORCH).lightLevel((state) -> 14).lootFrom(ModBlocks.GLOWSTONE_TORCH)));
-
 
 
 
