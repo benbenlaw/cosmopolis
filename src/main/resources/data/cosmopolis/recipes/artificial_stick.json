@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P",
+    "P"
+  ],
+  "key": {
+    "P": {
+      "item": "cosmopolis:artificial_planks"
+    }
+  },
+  "result": {
+    "item": "cosmopolis:artificial_stick",
+    "count": 4
+  }
+}

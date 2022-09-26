@@ -1,0 +1,37 @@
+{
+    "type": "cosmopolis:mars",
+    "generator": {
+      "type": "minecraft:noise",
+      "settings": "cosmopolis:mars",
+      "biome_source": {
+        "type": "minecraft:multi_noise",
+        "biomes": [
+          {
+            "biome": "cosmopolis:martian_plane",
+            "parameters": {
+              "temperature": 1,
+              "humidity": 1,
+              "continentalness": 1,
+              "erosion": 1,
+              "weirdness": 0,
+              "depth": 0,
+              "offset": 0
+            }
+          },
+          {
+            "biome": "cosmopolis:martian_ice_cap",
+            "parameters": {
+              "temperature": -1,
+              "humidity": 1,
+              "continentalness": 1,
+              "erosion": 0,
+              "weirdness": 0.2,
+              "depth": 0,
+              "offset": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+  

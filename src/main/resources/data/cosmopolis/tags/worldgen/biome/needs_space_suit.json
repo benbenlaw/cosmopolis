@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#cosmopolis:is_venus",
+    "#cosmopolis:is_mars",
+    "#cosmopolis:is_moon",
+    "#cosmopolis:is_space",
+    "#cosmopolis:is_mining_belt"
+  ]
+}

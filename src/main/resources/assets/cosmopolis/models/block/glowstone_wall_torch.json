@@ -1,0 +1,7 @@
+{
+  "render_type": "cutout",
+  "parent": "minecraft:block/template_torch_wall",
+  "textures": {
+    "torch": "cosmopolis:block/glowstone_torch"
+  }
+}

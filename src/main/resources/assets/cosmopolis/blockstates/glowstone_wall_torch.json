@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "cosmopolis:block/glowstone_wall_torch"
+    },
+    "facing=north": {
+      "model": "cosmopolis:block/glowstone_wall_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "cosmopolis:block/glowstone_wall_torch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "cosmopolis:block/glowstone_wall_torch",
+      "y": 180
+    }
+  }
+}

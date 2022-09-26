@@ -12,7 +12,17 @@ public class ModDimensions {
     public static final ResourceKey<Level> SPACE =
             ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation(
                     Cosmopolis.MOD_ID, "space"));
-    }
+
+
+    public static final ResourceKey<Level> MINING_BELT =
+            ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation(
+                    Cosmopolis.MOD_ID, "mining_belt"));
+
+    public static final ResourceKey<Level> VENUS =
+            ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation(
+                    Cosmopolis.MOD_ID, "venus"));
+
+}
 
 
 

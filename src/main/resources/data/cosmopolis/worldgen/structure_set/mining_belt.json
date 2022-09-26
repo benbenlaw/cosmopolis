@@ -1,0 +1,46 @@
+{
+  "structures": [
+    {
+      "structure": "cosmopolis:iron_asteroid",
+      "weight": 1
+    },
+    {
+      "structure": "cosmopolis:gold_asteroid",
+      "weight": 1
+    },
+    {
+      "structure": "cosmopolis:diamond_asteroid",
+      "weight": 1
+    },
+    {
+      "structure": "cosmopolis:coal_asteroid",
+      "weight": 1
+    },
+    {
+      "structure": "cosmopolis:copper_asteroid",
+      "weight": 1
+    },
+    {
+      "structure": "cosmopolis:emerald_asteroid",
+      "weight": 1
+    },
+    {
+      "structure": "cosmopolis:lapis_asteroid",
+      "weight": 1
+    },
+    {
+      "structure": "cosmopolis:quartz_asteroid",
+      "weight": 1
+    },
+    {
+      "structure": "cosmopolis:redstone_asteroid",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 3.2,
+    "separation": 2,
+    "salt": 85923
+  }
+}

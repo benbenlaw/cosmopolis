@@ -1,5 +1,42 @@
 Cosmopolis Mod Changelog
 
+9.0
+
+Added venus, mars and the moon thanks to WorldSaladDev for the worlds
+Reworked oxygen system to be biome based not dimension based
+Reworked banned items and blocks
+Removed water bucket from banned items
+Added data generators for almost everything
+
+8.0
+
+Added Mining Belt dimension contains ore asteroids
+ (WIP) NEED RECIPES!
+The mining belt can only be entered through the space dimension
+Added hammer
+Added Ice Shards
+Removed old asteroid rock and rock recipes
+Replaced with hammer being used on asteroid block to get rocks, ice shards, water drops and organic powder
+Asteroid stew now requires a water drop
+Asteroid stew texture moved up one pixel
+Added JEI information for some items
+Organic power now used to transform asteroids blocks in planks old plank recipe removed
+Tagged based banned items/blocks, add the blocks or items to the "banned_in_space_item" and/or "banned_in_space_block" tag. Items cant be used and blocks cant be palced
+
+7.0
+
+Added glowstone torches (and recipe)
+Added glowstone lanterns (and recipe)
+Added artificial sticks (and recipe)
+Changed asteroid tool recipes to use artificial sticks instead of normal ones
+Added asteroid rock tag (includes rock and asteroid rock)
+Added no oxygen effect
+Added no oxygen damage source
+No wearing a space suit in space no causes no oxygen damage instead of void
+Added death message for no oxygen in space
+Removed some old mod event code
+
+
 6.0
 
 Fixed some stuctures spawning with extra block like blue wall
@@ -16,8 +53,6 @@ Remove teleporter block
 Added space portal frame (replaces teleporter block recipe in the smiting table)
 Added space core (Made in smithing table)
 Portal now required to go into space, uses space portal frame blocks and can be lit with a space core
-
-
 
 (3.1)
 

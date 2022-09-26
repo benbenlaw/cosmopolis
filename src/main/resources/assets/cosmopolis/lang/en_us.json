@@ -5,8 +5,10 @@
   "item.cosmopolis.asteroid_axe": "Asteroid Axe",
   "item.cosmopolis.asteroid_shovel": "Asteroid Shovel",
   "item.cosmopolis.water_drop": "Water Drop",
+  "item.cosmopolis.ice_shard": "Ice Shard",
   "item.cosmopolis.rock": "Rock",
   "item.cosmopolis.asteroid_rock": "Asteroid Rock",
+  "item.cosmopolis.organic_powder": "Organic Powder",
   "item.cosmopolis.organic_powder": "Organic Powder",
   "item.cosmopolis.venus_spores": "Venus Spores",
   "item.cosmopolis.mars_spores": "Mars Spores",
@@ -22,12 +24,24 @@
   "item.cosmopolis.asteroid_stew": "Asteroid Stew",
   "item.cosmopolis.planetary_core_teleporter": "Planetary Core Teleporter",
   "item.cosmopolis.space_core": "Space Core",
+  "item.cosmopolis.artificial_stick": "Artificial Stick",
+  "item.cosmopolis.hammer": "Hammer",
 
   "block.cosmopolis.asteroid_block": "Asteroid Block",
   "block.cosmopolis.artificial_planks": "Asteroid Planks",
   "block.cosmopolis.venus_fungus": "Venus Fungus",
   "block.cosmopolis.mars_fungus": "Mars Fungus",
   "block.cosmopolis.space_portal_frame": "Space Portal Frame",
+  "block.cosmopolis.mining_belt_portal_frame": "Mining Belt Portal Frame",
+  "block.cosmopolis.glowstone_torch": "Glowstone Torch",
+  "block.cosmopolis.glowstone_lantern": "Glowstone Lantern",
+
+  "effect.cosmopolis.no_oxygen": "No Oxygen",
+  "death.attack.no_oxygen": "%1$s tried to breath in space without a space suit!",
+
+  "jei.cosmopolis.hammer": "A hammer can be used to break asteroid blocks into asteroid rocks, rocks, water drops and organic powder",
+  "jei.cosmopolis.organic_powder": "Can be used to turn blocks into different blocks",
+  "jei.cosmopolis.artificial_planks": "Use a organic powder on a asteroid block to transform it into a asteroid plank",
 
   "itemGroup.Cosmopolis": "Cosmopolis"
 }

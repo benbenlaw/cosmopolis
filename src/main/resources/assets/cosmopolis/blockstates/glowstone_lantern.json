@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "cosmopolis:block/glowstone_lantern"
+    },
+    "hanging=true": {
+      "model": "cosmopolis:block/glowstone_lantern_hanging"
+    }
+  }
+}

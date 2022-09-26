@@ -16,6 +16,13 @@ public class ModBiomes {
             DeferredRegister.create(ForgeRegistries.BIOMES, Cosmopolis.MOD_ID);
 
     public static final ResourceKey<Biome> SPACE = register("space");
+    public static final ResourceKey<Biome> MINING_BELT = register("mining_belt");
+    public static final ResourceKey<Biome> VENUS = register("venus");
+    public static final ResourceKey<Biome> VENUS_HELLGROUND = register("venus_hellground");
+    public static final ResourceKey<Biome> MARTIAN_ICE_CAP = register("martian_ice_cap");
+    public static final ResourceKey<Biome> MARTIAN_PLANE = register("martian_plane");
+    public static final ResourceKey<Biome> MOON = register("moon");
+    public static final ResourceKey<Biome> MOON_SATELLITE_GRAVEYARD = register("moon_satellite_graveyard");
 
 
     private static ResourceKey<Biome> register(String name)     {

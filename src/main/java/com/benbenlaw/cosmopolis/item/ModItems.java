@@ -2,9 +2,8 @@ package com.benbenlaw.cosmopolis.item;
 
 import com.benbenlaw.cosmopolis.Cosmopolis;
 
-import com.benbenlaw.cosmopolis.item.custom.AsteroidRock;
-import com.benbenlaw.cosmopolis.item.custom.MiniCoal;
-import com.benbenlaw.cosmopolis.item.custom.SpaceCore;
+import com.benbenlaw.cosmopolis.block.ModBlocks;
+import com.benbenlaw.cosmopolis.item.custom.*;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
@@ -20,9 +19,13 @@ public class ModItems {
     public static final RegistryObject<Item> ROCK = ITEMS.register("rock", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 
-    public static final RegistryObject<Item> ASTEROID_ROCK = ITEMS.register("asteroid_rock", () -> new AsteroidRock(true));
-    public static final RegistryObject<Item> MINI_COAL = ITEMS.register("mini_coal", () -> new MiniCoal(true));
-    public static final RegistryObject<Item> MINI_CHARCOAL = ITEMS.register("mini_charcoal", () -> new MiniCoal(true));
+    public static final RegistryObject<Item> HAMMER = ITEMS.register("hammer", () -> new HammerItem(
+            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)
+                    .durability(128)));
+
+    public static final RegistryObject<Item> ASTEROID_ROCK = ITEMS.register("asteroid_rock", () -> new AsteroidRockItem(true));
+    public static final RegistryObject<Item> MINI_COAL = ITEMS.register("mini_coal", () -> new MiniCoalItem(true));
+    public static final RegistryObject<Item> MINI_CHARCOAL = ITEMS.register("mini_charcoal", () -> new MiniCoalItem(true));
 
 //Armor
 
@@ -72,7 +75,10 @@ public class ModItems {
     public static final RegistryObject<Item> WATER_DROP = ITEMS.register("water_drop", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 
-    public static final RegistryObject<Item> ORGANIC_POWDER = ITEMS.register("organic_powder", () -> new Item(
+    public static final RegistryObject<Item> ICE_SHARD = ITEMS.register("ice_shard", () -> new Item(
+            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
+
+    public static final RegistryObject<Item> ORGANIC_POWDER = ITEMS.register("organic_powder", () -> new OrganicPowderItem(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 
     public static final RegistryObject<Item> VENUS_SPORES = ITEMS.register("venus_spores", () -> new Item(
@@ -84,11 +90,19 @@ public class ModItems {
     public static final RegistryObject<Item> PLANETARY_CORE_TELEPORTER = ITEMS.register("planetary_core_teleporter", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 
-    public static final RegistryObject<Item> SPACE_CORE = ITEMS.register("space_core", SpaceCore::new);
+    public static final RegistryObject<Item> ARTIFICIAL_STICK = ITEMS.register("artificial_stick", () -> new Item(
+            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
+
+    public static final RegistryObject<Item> SPACE_CORE = ITEMS.register("space_core", SpaceCoreItem::new);
 
     public static final RegistryObject<Item> ASTEROID_STEW = ITEMS.register("asteroid_stew", () -> new BowlFoodItem(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS).stacksTo(1)
                     .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4F).build())));
+
+    public static final RegistryObject<Item> STONE_TORCH = ITEMS.register("glowstone_torch",
+            () -> new StandingAndWallBlockItem(ModBlocks.GLOWSTONE_TORCH.get(), ModBlocks.GLOWSTONE_WALL_TORCH.get(),
+                    new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
+
 
 
     public static void register(IEventBus eventBus) {

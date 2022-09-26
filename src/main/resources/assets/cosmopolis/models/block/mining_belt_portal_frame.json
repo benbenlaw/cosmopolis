@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "cosmopolis:block/mining_belt_portal_frame"
+  }
+}

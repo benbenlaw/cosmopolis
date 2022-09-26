@@ -1,0 +1,15 @@
+{
+  "type": "cosmopolis:mining_belt",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "cosmopolis:mining_belt",
+      "lakes": false,
+      "features": false,
+      "layers": [],
+      "structure_overrides": [
+        "cosmopolis:mining_belt"
+      ]
+    }
+  }
+}

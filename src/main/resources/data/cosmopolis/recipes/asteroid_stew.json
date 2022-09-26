@@ -9,6 +9,9 @@
     },
     {
       "item": "minecraft:bowl"
+    },
+    {
+      "item": "cosmopolis:water_drop"
     }
   ],
   "result": {

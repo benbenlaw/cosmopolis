@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "RGR",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "tag": "cosmopolis:asteroid_rocks"
+    },
+    "G": {
+      "item": "cosmopolis:glowstone_torch"
+    }
+  },
+  "result": {
+    "item": "cosmopolis:glowstone_lantern"
+  }
+}

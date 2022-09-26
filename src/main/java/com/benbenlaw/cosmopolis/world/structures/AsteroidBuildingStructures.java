@@ -146,7 +146,7 @@ public class AsteroidBuildingStructures extends Structure {
 
     @Override
     public StructureType<?> type() {
-        return ModStructures.ASTEROIDS.get(); // Helps the game know how to turn this structure back to json to save to chunks
+        return ModStructures.ASTEROID_BUILDINGS.get(); // Helps the game know how to turn this structure back to json to save to chunks
     }
 }
 

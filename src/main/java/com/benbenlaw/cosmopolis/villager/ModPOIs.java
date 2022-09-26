@@ -18,6 +18,10 @@ public class ModPOIs {
             POI.register("space_portal", () -> new PoiType(ImmutableSet.copyOf(
                     ModBlocks.SPACE_PORTAL.get().getStateDefinition().getPossibleStates()), 1, 1));
 
+    public static final RegistryObject<PoiType> MINING_BELT_PORTAL =
+            POI.register("mining_dimension_portal", () -> new PoiType(ImmutableSet.copyOf(
+                    ModBlocks.MINING_BELT_PORTAL.get().getStateDefinition().getPossibleStates()), 1, 1));
+
 
     public static void register(IEventBus eventBus) {
         POI.register(eventBus);

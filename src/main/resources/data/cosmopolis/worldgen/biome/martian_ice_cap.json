@@ -1,0 +1,23 @@
+{
+    "temperature": 0.8,
+    "downfall": 0.4,
+    "precipitation": "none",
+    "temperature_modifier": "frozen",
+    "effects": {
+    "sky_color": 6989,
+    "fog_color": 10367749,
+    "water_color": 3172309,
+    "water_fog_color": 329011,
+    "grass_color": 1874974,
+    "foliage_color": 1880094
+    },
+    "spawners": {},
+    "spawn_costs": {},
+    "carvers": {
+      "air": [
+        "minecraft:canyon"
+      ]
+    },
+    "features": ["minecraft:freeze_top_layer"]
+  }
+  

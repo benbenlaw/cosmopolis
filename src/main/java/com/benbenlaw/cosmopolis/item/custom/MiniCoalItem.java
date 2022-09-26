@@ -6,13 +6,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeType;
 
-public class AsteroidRock extends Item {
+public class MiniCoalItem extends Item {
 
     final boolean hasBurnTime;
 
-    public AsteroidRock(boolean burnTime) {
-        super(new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)
-                .food(new FoodProperties.Builder().nutrition(1).saturationMod(0.2F).build()));
+    public MiniCoalItem(boolean burnTime) {
+        super(new Properties().tab(ModCreativeModTab.COSMOPOLIS));
 
         this.hasBurnTime = burnTime;
 
@@ -20,7 +19,7 @@ public class AsteroidRock extends Item {
     @Override
     public int getBurnTime(ItemStack itemStack, RecipeType<?> type) {
         if(this.hasBurnTime == true) {
-            return 100;
+            return 200;
         }
 
         return -1;

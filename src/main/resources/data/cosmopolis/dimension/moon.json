@@ -1,0 +1,37 @@
+{
+    "type": "cosmopolis:moon",
+    "generator": {
+      "type": "minecraft:noise",
+      "settings": "cosmopolis:moon",
+      "biome_source": {
+        "type": "minecraft:multi_noise",
+        "biomes": [
+          {
+            "biome": "cosmopolis:moon",
+            "parameters": {
+              "temperature": 0,
+              "humidity": 0,
+              "continentalness": 1,
+              "erosion": 0,
+              "weirdness": 1,
+              "depth": 0,
+              "offset": 0
+            }
+          },
+          {
+            "biome": "cosmopolis:moon_satellite_graveyard",
+            "parameters": {
+              "temperature": 0,
+              "humidity": 0,
+              "continentalness": 1,
+              "erosion": 1,
+              "weirdness": 1,
+              "depth": 0,
+              "offset": 0
+            }
+          }
+        ]
+      }
+    }
+  }
+  

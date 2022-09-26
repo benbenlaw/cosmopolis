@@ -129,7 +129,7 @@ public class SpacePortalBlock extends Block {
                     if(minecraftserver != null) {
                         ServerLevel destinationWorld = minecraftserver.getLevel(destination);
                         if(destinationWorld != null && minecraftserver.isNetherEnabled() && !entity.isPassenger()) {
-                            entity.level.getProfiler().push("kaupen_portal");
+                            entity.level.getProfiler().push("space_portal");
                             entity.setPortalCooldown();
                             entity.changeDimension(destinationWorld, new ModTeleporter(destinationWorld));
                             entity.level.getProfiler().pop();

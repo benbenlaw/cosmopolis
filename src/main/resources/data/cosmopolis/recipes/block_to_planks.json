@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "cosmopolis:asteroid_block"
-  },
-  "result": "cosmopolis:artificial_planks",
-  "cookingtime": 200
-}

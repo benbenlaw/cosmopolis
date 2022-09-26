@@ -1,6 +1,8 @@
 package com.benbenlaw.cosmopolis;
 
 import com.benbenlaw.cosmopolis.block.ModBlocks;
+import com.benbenlaw.cosmopolis.config.CosmopolisConfigFile;
+import com.benbenlaw.cosmopolis.effect.ModEffects;
 import com.benbenlaw.cosmopolis.item.ModItems;
 import com.benbenlaw.cosmopolis.villager.ModPOIs;
 import com.benbenlaw.cosmopolis.world.ModBiomes;
@@ -8,7 +10,9 @@ import com.benbenlaw.cosmopolis.world.structures.ModStructures;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.InterModComms;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
@@ -37,6 +41,7 @@ public class Cosmopolis {
         ModBiomes.register(eventBus);
         ModStructures.register(eventBus);
         ModPOIs.register(eventBus);
+        ModEffects.register(eventBus);
 
 
         // Register the enqueueIMC method for modloading
@@ -50,7 +55,7 @@ public class Cosmopolis {
 
         IEventBus forgeBus = MinecraftForge.EVENT_BUS;
 
-//        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ConfigFile.SPEC, "essence_common.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, CosmopolisConfigFile.SPEC, "cosmopolis_common.toml");
     }
 
         private void enqueueIMC(final InterModEnqueueEvent event) {
@@ -68,7 +73,13 @@ public class Cosmopolis {
                     collect(Collectors.toList()));
         }
 
-        private void doClientStuff(final FMLClientSetupEvent event) {
-            // do something that can only be done on the client
-        }
+    private void doClientStuff(final FMLClientSetupEvent event) {
+
+        event.enqueueWork(() -> {
+
+     //      ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLOWSTONE_TORCH.get(), RenderType.cutout());
+     //       ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLOWSTONE_WALL_TORCH.get(), RenderType.cutout());
+
+        });
     }
+}

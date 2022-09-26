@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OOO",
+    "OSO",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "cosmopolis:artificial_stick"
+    },
+    "O": {
+      "item": "cosmopolis:organic_powder"
+    }
+  },
+  "result": {
+    "item": "minecraft:furnace"
+  }
+}

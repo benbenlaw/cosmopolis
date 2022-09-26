@@ -26,6 +26,9 @@ public class ModStructures {
     public static final RegistryObject<StructureType<?>> ASTEROID_BUILDINGS =
             DEFERRED_REGISTRY_STRUCTURE.register("asteroid_buildings", () -> typeConvert(AsteroidBuildingStructures.CODEC));
 
+    public static final RegistryObject<StructureType<?>> MINING_BELT_ASTEROID =
+            DEFERRED_REGISTRY_STRUCTURE.register("mining_belt", () -> typeConvert(MiningBeltAsteroidStructure.CODEC));
+
 
     public static <S extends Structure> StructureType<S> typeConvert(Codec<S> codec) {
         return () -> codec;

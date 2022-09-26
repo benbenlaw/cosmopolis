@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    " X "
+  ],
+  "key": {
+    "#": {
+      "item": "cosmopolis:asteroid_block"
+    },
+    "X": {
+      "item": "cosmopolis:artificial_stick"
+    }
+  },
+  "result": {
+    "item": "cosmopolis:hammer"
+  }
+}

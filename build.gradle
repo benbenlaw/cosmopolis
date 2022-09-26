@@ -1,3 +1,5 @@
+import netscape.javascript.JSObject
+
 buildscript {
     repositories {
         maven { url = 'https://maven.minecraftforge.net' }
@@ -14,7 +16,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 group = 'cosmopolis'
-version = '1.19.X-6.0'
+version = '1.19.X-8.0'
 
 java {
     archivesBaseName = 'cosmopolis'

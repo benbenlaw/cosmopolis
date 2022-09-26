@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "II",
+    "II"
+  ],
+  "key": {
+    "I": {
+      "item": "cosmopolis:ice_shard"
+    }
+  },
+  "result": {
+    "item": "minecraft:ice"
+  }
+}
