@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "cosmopolis:asteroid_stew"
+  },
+  "result": "cosmopolis:hot_asteroid_stew"
+}

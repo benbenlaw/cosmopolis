@@ -100,6 +100,10 @@ public class ModItems {
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS).stacksTo(1)
                     .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.4F).build())));
 
+    public static final RegistryObject<Item> HOT_ASTEROID_STEW = ITEMS.register("hot_asteroid_stew", () -> new BowlFoodItem(
+            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS).stacksTo(1)
+                    .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.9F).build())));
+
     public static final RegistryObject<Item> STONE_TORCH = ITEMS.register("glowstone_torch",
             () -> new StandingAndWallBlockItem(ModBlocks.GLOWSTONE_TORCH.get(), ModBlocks.GLOWSTONE_WALL_TORCH.get(),
                     new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));

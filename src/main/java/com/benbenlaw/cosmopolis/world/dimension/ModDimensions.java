@@ -13,7 +13,6 @@ public class ModDimensions {
             ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation(
                     Cosmopolis.MOD_ID, "space"));
 
-
     public static final ResourceKey<Level> MINING_BELT =
             ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation(
                     Cosmopolis.MOD_ID, "mining_belt"));
@@ -21,6 +20,16 @@ public class ModDimensions {
     public static final ResourceKey<Level> VENUS =
             ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation(
                     Cosmopolis.MOD_ID, "venus"));
+
+    public static final ResourceKey<Level> MARS =
+            ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation(
+                    Cosmopolis.MOD_ID, "mars"));
+
+    public static final ResourceKey<Level> MOON =
+            ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation(
+                    Cosmopolis.MOD_ID, "moon"));
+
+
 
 }
 

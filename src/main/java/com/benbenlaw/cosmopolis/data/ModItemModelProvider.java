@@ -44,6 +44,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SPACE_SUIT_CHESTPLATE);
         simpleItem(ModItems.SPACE_SUIT_LEGGINGS);
         simpleItem(ModItems.SPACE_SUIT_HELMET);
+        simpleItem(ModItems.HOT_ASTEROID_STEW);
 
         //Torches
 

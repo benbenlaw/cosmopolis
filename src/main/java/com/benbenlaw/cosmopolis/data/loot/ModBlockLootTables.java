@@ -19,7 +19,8 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.MINING_BELT_PORTAL_FRAME.get());
         this.dropSelf(ModBlocks.SPACE_PORTAL_FRAME.get());
         this.dropSelf(ModBlocks.GLOWSTONE_LANTERN.get());
-        this.dropSelf(ModBlocks.GLOWSTONE_TORCH.orElse(ModBlocks.GLOWSTONE_WALL_TORCH.get()));
+        this.dropSelf(ModBlocks.GLOWSTONE_TORCH.get());
+
     }
 
     @Override

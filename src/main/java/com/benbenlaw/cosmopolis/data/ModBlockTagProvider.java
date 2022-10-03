@@ -8,6 +8,7 @@ import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 
 public class ModBlockTagProvider extends BlockTagsProvider {
     public ModBlockTagProvider(DataGenerator generator, String modId, ExistingFileHelper existingFileHelper) {
@@ -20,10 +21,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.ASTEROID_BLOCK.get());
 
+
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.SPACE_PORTAL_FRAME.get())
                 .add(ModBlocks.MINING_BELT_PORTAL_FRAME.get())
-                .add(ModBlocks.ASTEROID_BLOCK.get());
+                .add(ModBlocks.ASTEROID_BLOCK.get())
+                .add(ModBlocks.GLOWSTONE_LANTERN.get());
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(ModBlocks.VENUS_FUNGUS.get())

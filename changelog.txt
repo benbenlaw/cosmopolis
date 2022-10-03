@@ -1,5 +1,19 @@
 Cosmopolis Mod Changelog
 
+11.0
+
+Added artificial stick to forge rods tag
+Fixes to some data generation
+Hammer now called asteroid hammer
+Oak sapling recipe fixed
+Added hot asteroid stew
+Jet Boots mod armors allowed in space
+
+10.0
+
+Fixed some data not being generated correctly
+Added gravity
+
 9.0
 
 Added venus, mars and the moon thanks to WorldSaladDev for the worlds
@@ -11,7 +25,6 @@ Added data generators for almost everything
 8.0
 
 Added Mining Belt dimension contains ore asteroids
- (WIP) NEED RECIPES!
 The mining belt can only be entered through the space dimension
 Added hammer
 Added Ice Shards
