@@ -1,6 +1,7 @@
 package com.benbenlaw.cosmopolis;
 
 import com.benbenlaw.cosmopolis.block.ModBlocks;
+import com.benbenlaw.cosmopolis.entity.ModEntities;
 import com.benbenlaw.cosmopolis.item.ModItems;
 import com.benbenlaw.cosmopolis.villager.ModPOIs;
 import com.benbenlaw.cosmopolis.world.ModBiomes;
@@ -37,6 +38,7 @@ public class Cosmopolis {
         ModBiomes.register(eventBus);
         ModStructures.register(eventBus);
         ModPOIs.register(eventBus);
+        ModEntities.register(eventBus);
 
 
         // Register the enqueueIMC method for modloading
