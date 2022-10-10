@@ -1,4 +1,4 @@
-package com.benbenlaw.integration;
+package com.benbenlaw.cosmopolis.integration;
 
 import com.benbenlaw.cosmopolis.Cosmopolis;
 import com.benbenlaw.cosmopolis.block.ModBlocks;

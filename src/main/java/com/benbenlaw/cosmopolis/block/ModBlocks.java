@@ -43,10 +43,20 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MARS_FUNGUS = registerBlock("mars_fungus",
             () -> new Block(BlockBehaviour.Properties.of(Material.PLANT).strength(0.5f, 0.5f).sound(SoundType.CROP)));
+
     public static final RegistryObject<Block> SPACE_PORTAL_FRAME = registerBlock("space_portal_frame",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(0.5f, 0.5f).sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> MINING_BELT_PORTAL_FRAME = registerBlock("mining_belt_portal_frame",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(0.5f, 0.5f).sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> VENUS_PORTAL_FRAME = registerBlock("venus_portal_frame",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(0.5f, 0.5f).sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block>MARS_PORTAL_FRAME = registerBlock("mars_portal_frame",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(0.5f, 0.5f).sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> MOON_PORTAL_FRAME = registerBlock("moon_portal_frame",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(0.5f, 0.5f).sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> GLOWSTONE_LANTERN = registerBlock("glowstone_lantern",
@@ -63,6 +73,15 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MINING_BELT_PORTAL = BLOCKS.register("mining_belt_portal",
             MiningBeltPortalBlock::new);
+
+    public static final RegistryObject<Block> VENUS_PORTAL = BLOCKS.register("venus_portal",
+            VenusPortalBlock::new);
+
+    public static final RegistryObject<Block> MARS_PORTAL = BLOCKS.register("mars_portal",
+            MarsPortalBlock::new);
+
+    public static final RegistryObject<Block> MOON_PORTAL = BLOCKS.register("moon_portal",
+            MoonPortalBlock::new);
 
     public static final RegistryObject<Block> GLOWSTONE_TORCH = BLOCKS.register("glowstone_torch",
             () -> new GlowstoneTorchBlock(BlockBehaviour.Properties.copy(Blocks.TORCH).lightLevel((state) -> 14)));

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "axis=z": { "model": "cosmopolis:block/mars_portal_ew" },
+    "axis=x": { "model": "cosmopolis:block/mars_portal_ns" }
+  }
+}

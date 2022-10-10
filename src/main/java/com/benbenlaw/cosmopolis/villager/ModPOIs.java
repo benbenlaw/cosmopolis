@@ -22,6 +22,18 @@ public class ModPOIs {
             POI.register("mining_dimension_portal", () -> new PoiType(ImmutableSet.copyOf(
                     ModBlocks.MINING_BELT_PORTAL.get().getStateDefinition().getPossibleStates()), 1, 1));
 
+    public static final RegistryObject<PoiType> VENUS_PORTAL =
+            POI.register("venus_portal", () -> new PoiType(ImmutableSet.copyOf(
+                    ModBlocks.VENUS_PORTAL.get().getStateDefinition().getPossibleStates()), 1, 1));
+
+    public static final RegistryObject<PoiType> MARS_PORTAL =
+            POI.register("mars_portal", () -> new PoiType(ImmutableSet.copyOf(
+                    ModBlocks.MARS_PORTAL.get().getStateDefinition().getPossibleStates()), 1, 1));
+
+    public static final RegistryObject<PoiType> MOON_PORTAL =
+            POI.register("moon_portal", () -> new PoiType(ImmutableSet.copyOf(
+                    ModBlocks.MOON_PORTAL.get().getStateDefinition().getPossibleStates()), 1, 1));
+
 
     public static void register(IEventBus eventBus) {
         POI.register(eventBus);

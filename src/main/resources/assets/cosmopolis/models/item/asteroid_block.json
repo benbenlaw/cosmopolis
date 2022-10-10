@@ -1,3 +1,6 @@
 {
-  "parent": "cosmopolis:block/asteroid_block"
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cosmopolis:block/asteroid_block"
+  }
 }

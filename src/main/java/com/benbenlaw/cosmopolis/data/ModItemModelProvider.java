@@ -68,6 +68,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlock(ModBlocks.VENUS_FUNGUS);
         simpleBlock(ModBlocks.MINING_BELT_PORTAL_FRAME);
         simpleBlock(ModBlocks.SPACE_PORTAL_FRAME);
+        simpleBlock(ModBlocks.VENUS_PORTAL_FRAME);
+        simpleBlock(ModBlocks.MARS_PORTAL_FRAME);
+        simpleBlock(ModBlocks.MOON_PORTAL_FRAME);
         simpleBlock(ModBlocks.GLOWSTONE_LANTERN);
 
 

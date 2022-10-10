@@ -1,5 +1,11 @@
 Cosmopolis Mod Changelog
 
+12.0
+
+Disabled player fall damage in space biomes
+Removed direct support inside mod as breaks default stuff
+Added portals to venus, mars and moon
+
 11.0
 
 Added artificial stick to forge rods tag

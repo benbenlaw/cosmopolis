@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "axis=z": { "model": "cosmopolis:block/venus_portal_ew" },
+    "axis=x": { "model": "cosmopolis:block/venus_portal_ns" }
+  }
+}

@@ -17,6 +17,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -57,6 +58,16 @@ public class ModEvents {
             } else if (player.getLevel().getBiome(player.getOnPos()).is(ModTags.Biomes.NEEDS_SPACE_SUIT)) {
                 player.addEffect(new MobEffectInstance(ModEffects.NO_OXYGEN.get(), 1));
             }
+        }
+    }
+
+    @SubscribeEvent
+    public static void noFallDamageInSpace(TickEvent.@NotNull PlayerTickEvent event) {
+
+        Player player = event.player;
+
+        if(player.getLevel().getBiome(player.getOnPos()).is(ModTags.Biomes.NEEDS_SPACE_SUIT)) {
+            player.resetFallDistance();
         }
     }
 

@@ -25,6 +25,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.SPACE_PORTAL_FRAME.get())
                 .add(ModBlocks.MINING_BELT_PORTAL_FRAME.get())
+                .add(ModBlocks.VENUS_PORTAL_FRAME.get())
+                .add(ModBlocks.MARS_PORTAL_FRAME.get())
+                .add(ModBlocks.MOON_PORTAL_FRAME.get())
                 .add(ModBlocks.ASTEROID_BLOCK.get())
                 .add(ModBlocks.GLOWSTONE_LANTERN.get());
 
@@ -39,6 +42,20 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(ModTags.Blocks.PORTAL_FRAME_BLOCKS)
                 .add(ModBlocks.SPACE_PORTAL_FRAME.get());
+
+        tag(ModTags.Blocks.MARS_FRAME_BLOCKS)
+                .add(ModBlocks.MARS_PORTAL_FRAME.get());
+
+        tag(ModTags.Blocks.VENUS_FRAME_BLOCKS)
+                .add(ModBlocks.VENUS_PORTAL_FRAME.get());
+
+        tag(ModTags.Blocks.MOON_FRAME_BLOCKS)
+                .add(ModBlocks.MOON_PORTAL_FRAME.get());
+
+
+
+
+
 
         tag(ModTags.Blocks.BANNED_IN_SPACE_BLOCKS)
                 .addTags(BlockTags.SAPLINGS)

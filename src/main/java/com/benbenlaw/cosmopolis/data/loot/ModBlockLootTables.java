@@ -18,8 +18,12 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.VENUS_FUNGUS.get());
         this.dropSelf(ModBlocks.MINING_BELT_PORTAL_FRAME.get());
         this.dropSelf(ModBlocks.SPACE_PORTAL_FRAME.get());
+        this.dropSelf(ModBlocks.VENUS_PORTAL_FRAME.get());
+        this.dropSelf(ModBlocks.MARS_PORTAL_FRAME.get());
+        this.dropSelf(ModBlocks.MOON_PORTAL_FRAME.get());
         this.dropSelf(ModBlocks.GLOWSTONE_LANTERN.get());
         this.dropSelf(ModBlocks.GLOWSTONE_TORCH.get());
+
 
     }
 

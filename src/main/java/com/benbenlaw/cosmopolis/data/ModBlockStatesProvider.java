@@ -19,5 +19,8 @@ public class ModBlockStatesProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.VENUS_FUNGUS.get());
         simpleBlock(ModBlocks.MINING_BELT_PORTAL_FRAME.get());
         simpleBlock(ModBlocks.SPACE_PORTAL_FRAME.get());
+        simpleBlock(ModBlocks.VENUS_PORTAL_FRAME.get());
+        simpleBlock(ModBlocks.MARS_PORTAL_FRAME.get());
+        simpleBlock(ModBlocks.MOON_PORTAL_FRAME.get());
     }
 }

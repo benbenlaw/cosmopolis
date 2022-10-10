@@ -2,6 +2,9 @@
   "values": [
     "cosmopolis:space_portal_frame",
     "cosmopolis:mining_belt_portal_frame",
+    "cosmopolis:venus_portal_frame",
+    "cosmopolis:mars_portal_frame",
+    "cosmopolis:moon_portal_frame",
     "cosmopolis:asteroid_block",
     "cosmopolis:glowstone_lantern"
   ]

@@ -17,11 +17,12 @@ import net.minecraftforge.common.Tags;
 
 public class ModTags {
 
-
-
     public static class Blocks {
         public static final TagKey<Block> PORTAL_FRAME_BLOCKS = tag("portal_frame_blocks");
         public static final TagKey<Block> MINING_BELT_FRAME_BLOCKS = tag("mining_belt_frame_blocks");
+        public static final TagKey<Block> MARS_FRAME_BLOCKS = tag("mars_frame_blocks");
+        public static final TagKey<Block> VENUS_FRAME_BLOCKS = tag("venus_frame_blocks");
+        public static final TagKey<Block> MOON_FRAME_BLOCKS = tag("moon_frame_blocks");
         public static final TagKey<Block> BANNED_IN_SPACE_BLOCKS = tag("banned_in_space_blocks");
 
         private static TagKey<Block> tag(String name) {
@@ -50,7 +51,6 @@ public class ModTags {
         private static TagKey<Item> forgeTag(String name) {
             return ItemTags.create(new ResourceLocation("forge", name));
         }
-
     }
 
     public static class Biomes {
