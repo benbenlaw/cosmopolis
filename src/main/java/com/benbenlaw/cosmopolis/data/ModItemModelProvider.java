@@ -71,7 +71,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlock(ModBlocks.VENUS_PORTAL_FRAME);
         simpleBlock(ModBlocks.MARS_PORTAL_FRAME);
         simpleBlock(ModBlocks.MOON_PORTAL_FRAME);
-        simpleBlock(ModBlocks.GLOWSTONE_LANTERN);
+        orientable("gravity_generator",
+                modLoc("block/gravity_generator_side"), modLoc("block/gravity_generator_front"), modLoc("block/gravity_generator_top"));
+
+
+
+        simpleBlock(ModBlocks.BLACKSTONE_DEBRIS_ORE);
+        simpleBlock(ModBlocks.BLACKSTONE_URANIUM_ORE);
+        simpleBlock(ModBlocks.BLACKSTONE_DIAMOND_ORE);
+        simpleBlock(ModBlocks.BLACKSTONE_EMERALD_ORE);
+        simpleBlock(ModBlocks.BLACKSTONE_OSMIUM_ORE);
 
 
 

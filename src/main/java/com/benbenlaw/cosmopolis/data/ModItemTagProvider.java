@@ -1,6 +1,7 @@
 package com.benbenlaw.cosmopolis.data;
 
 import com.benbenlaw.cosmopolis.Cosmopolis;
+import com.benbenlaw.cosmopolis.block.ModBlocks;
 import com.benbenlaw.cosmopolis.item.ModItems;
 import com.benbenlaw.cosmopolis.util.ModTags;
 import net.minecraft.data.DataGenerator;
@@ -39,6 +40,13 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
           tag(ModTags.Items.SPACE_SUIT_BOOTS)
                   .add(ModItems.SPACE_SUIT_BOOTS.get());
+
+          tag(Tags.Items.ORES)
+                  .add(ModBlocks.BLACKSTONE_DEBRIS_ORE.get().asItem())
+                  .add(ModBlocks.BLACKSTONE_URANIUM_ORE.get().asItem())
+                  .add(ModBlocks.BLACKSTONE_DIAMOND_ORE.get().asItem())
+                  .add(ModBlocks.BLACKSTONE_EMERALD_ORE.get().asItem())
+                  .add(ModBlocks.BLACKSTONE_OSMIUM_ORE.get().asItem());
 
     }
 

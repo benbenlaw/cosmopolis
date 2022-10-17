@@ -23,7 +23,13 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.MOON_PORTAL_FRAME.get());
         this.dropSelf(ModBlocks.GLOWSTONE_LANTERN.get());
         this.dropSelf(ModBlocks.GLOWSTONE_TORCH.get());
+        this.dropSelf(ModBlocks.GRAVITY_GENERATOR.get());
 
+        this.dropSelf(ModBlocks.BLACKSTONE_DEBRIS_ORE.get());
+        this.dropSelf(ModBlocks.BLACKSTONE_EMERALD_ORE.get());
+        this.dropSelf(ModBlocks.BLACKSTONE_DIAMOND_ORE.get());
+        this.dropSelf(ModBlocks.BLACKSTONE_OSMIUM_ORE.get());
+        this.dropSelf(ModBlocks.BLACKSTONE_URANIUM_ORE.get());
 
     }
 

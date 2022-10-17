@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#cosmopolis:is_venus",
+  "features": "cosmopolis:venus_diamond_ore_placed",
+  "step": "underground_ores"
+}

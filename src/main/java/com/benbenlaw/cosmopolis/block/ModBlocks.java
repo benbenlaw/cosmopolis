@@ -29,8 +29,30 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, Cosmopolis.MOD_ID);
 
 
+    public static final RegistryObject<Block> GRAVITY_GENERATOR = registerBlock("gravity_generator",
+            () -> new GravityGeneratorBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .requiresCorrectToolForDrops()
+                    .strength(2.0f, 2.0f)
+                    .noOcclusion()
+                    .sound(SoundType.STONE)));
+
 
     //New Blocks
+
+    public static final RegistryObject<Block> BLACKSTONE_DEBRIS_ORE = registerBlock("blackstone_debris_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> BLACKSTONE_EMERALD_ORE = registerBlock("blackstone_emerald_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> BLACKSTONE_DIAMOND_ORE = registerBlock("blackstone_diamond_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> BLACKSTONE_OSMIUM_ORE = registerBlock("blackstone_osmium_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> BLACKSTONE_URANIUM_ORE = registerBlock("blackstone_uranium_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> ASTEROID_BLOCK = registerBlock("asteroid_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));

@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:item/generated",
   "textures": {
-    "all": "cosmopolis:block/glowstone_lantern"
+    "layer0": "cosmopolis:item/glowstone_lantern"
   }
 }

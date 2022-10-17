@@ -42,6 +42,5 @@ public class ModBiomeTagsProvider extends BiomeTagsProvider {
                 .addTag(ModTags.Biomes.IS_MINING_BELT);
 
 
-
     }
 }

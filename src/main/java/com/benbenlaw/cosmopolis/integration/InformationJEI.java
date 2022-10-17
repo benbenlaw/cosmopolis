@@ -3,6 +3,7 @@ package com.benbenlaw.cosmopolis.integration;
 import com.benbenlaw.cosmopolis.Cosmopolis;
 import com.benbenlaw.cosmopolis.block.ModBlocks;
 import com.benbenlaw.cosmopolis.item.ModItems;
+import com.benbenlaw.cosmopolis.util.ModTags;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.VanillaTypes;
@@ -32,9 +33,22 @@ public class InformationJEI implements IModPlugin {
                 Component.translatable("jei.cosmopolis.hammer"));
         reg.addIngredientInfo(new ItemStack(ModItems.ICE_SHARD.get()), VanillaTypes.ITEM_STACK,
                 Component.translatable("jei.cosmopolis.hammer"));
-
         reg.addIngredientInfo(new ItemStack(ModBlocks.ARTIFICIAL_PLANKS.get()), VanillaTypes.ITEM_STACK,
                 Component.translatable("jei.cosmopolis.artificial_planks"));
+
+        reg.addIngredientInfo(new ItemStack(ModBlocks.BLACKSTONE_DEBRIS_ORE.get()), VanillaTypes.ITEM_STACK,
+                Component.translatable("jei.cosmopolis.venus_ores"));
+       reg.addIngredientInfo(new ItemStack(ModBlocks.BLACKSTONE_DIAMOND_ORE.get()), VanillaTypes.ITEM_STACK,
+                Component.translatable("jei.cosmopolis.venus_ores"));
+       reg.addIngredientInfo(new ItemStack(ModBlocks.BLACKSTONE_URANIUM_ORE.get()), VanillaTypes.ITEM_STACK,
+                Component.translatable("jei.cosmopolis.venus_ores"));
+       reg.addIngredientInfo(new ItemStack(ModBlocks.BLACKSTONE_EMERALD_ORE.get()), VanillaTypes.ITEM_STACK,
+                Component.translatable("jei.cosmopolis.venus_ores"));
+       reg.addIngredientInfo(new ItemStack(ModBlocks.BLACKSTONE_OSMIUM_ORE.get()), VanillaTypes.ITEM_STACK,
+                Component.translatable("jei.cosmopolis.venus_ores"));
+
+       reg.addIngredientInfo(new ItemStack(ModBlocks.GRAVITY_GENERATOR.get()), VanillaTypes.ITEM_STACK,
+                Component.translatable("jei.cosmopolis.gravity_generator"));
 
     }
 }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "cosmopolis:block/gravity_generator",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "cosmopolis:block/gravity_generator"
+    },
+    "facing=south": {
+      "model": "cosmopolis:block/gravity_generator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cosmopolis:block/gravity_generator",
+      "y": 270
+    }
+  }
+}

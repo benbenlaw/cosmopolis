@@ -2,6 +2,7 @@
   "temperature": 0.8,
   "downfall": 0.4,
   "precipitation": "none",
+  "creature_spawn_probability": 0.4,
   "temperature_modifier": "none",
   "category": "none",
   "effects": {
@@ -14,6 +15,12 @@
   },
   "spawners": {
     "monster": [
+      {
+        "type": "minecraft:slime",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 10
+      },
       {
         "weight": 0,
         "minCount": 0,

@@ -36,6 +36,13 @@
   "block.cosmopolis.mining_belt_portal_frame": "Mining Belt Portal Frame",
   "block.cosmopolis.glowstone_torch": "Glowstone Torch",
   "block.cosmopolis.glowstone_lantern": "Glowstone Lantern",
+  "block.cosmopolis.gravity_generator": "Gravity Generator",
+
+  "block.cosmopolis.blackstone_debris_ore": "Blackstone Debris Ore",
+  "block.cosmopolis.blackstone_uranium_ore": "Blackstone Uranium Ore",
+  "block.cosmopolis.blackstone_emerald_ore": "Blackstone Emerald Ore",
+  "block.cosmopolis.blackstone_diamond_ore": "Blackstone Diamond Ore",
+  "block.cosmopolis.blackstone_osmium_ore": "Blackstone Osmium Ore",
 
   "effect.cosmopolis.no_oxygen": "No Oxygen",
   "death.attack.no_oxygen": "%1$s tried to breath in space without a space suit!",
@@ -43,6 +50,8 @@
   "jei.cosmopolis.hammer": "A hammer can be used to break asteroid blocks into asteroid rocks, rocks, water drops and organic powder",
   "jei.cosmopolis.organic_powder": "Can be used to turn blocks into different blocks",
   "jei.cosmopolis.artificial_planks": "Use a organic powder on a asteroid block to transform it into a asteroid plank",
+  "jei.cosmopolis.venus_ores": "Found on venus",
+  "jei.cosmopolis.gravity_generator": "The gravity generator makes RF based on the current dimension. Doesn't store power outputs from the top",
 
   "itemGroup.Cosmopolis": "Cosmopolis"
 }

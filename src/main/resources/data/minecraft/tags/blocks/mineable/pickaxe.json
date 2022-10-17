@@ -6,6 +6,12 @@
     "cosmopolis:mars_portal_frame",
     "cosmopolis:moon_portal_frame",
     "cosmopolis:asteroid_block",
-    "cosmopolis:glowstone_lantern"
+    "cosmopolis:glowstone_lantern",
+    "cosmopolis:blackstone_debris_ore",
+    "cosmopolis:blackstone_uranium_ore",
+    "cosmopolis:blackstone_diamond_ore",
+    "cosmopolis:blackstone_emerald_ore",
+    "cosmopolis:blackstone_osmium_ore",
+    "cosmopolis:gravity_generator"
   ]
 }

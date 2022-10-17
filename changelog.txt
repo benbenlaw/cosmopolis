@@ -1,10 +1,19 @@
 Cosmopolis Mod Changelog
 
-12.0
+13.0
 
 Disabled player fall damage in space biomes
 Removed direct support inside mod as breaks default stuff
 Added portals to venus, mars and moon
+Fixed space portal not lighting in the overworld
+Slimes now spawn in the mining dimension
+Venus lava level reduced to -20 from 19
+Venus now spawn blackstone ores including osmium, uranium, diamond, emerald and debris
+Added gravity generator, makes RF based on the current dimension
+Fixed config file not generating correctly meaning asteroid block hammering is no configurable again
+ADD RECIPES FOR BLACKSTONE ORES
+Torches and lanterns can no longer be placed in space, message telling the player to use glowstone variants instead
+Fixed glowstone lantern texture
 
 11.0
 

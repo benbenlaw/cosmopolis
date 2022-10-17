@@ -7,8 +7,12 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.ForgeMod;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.common.data.ForgeBlockTagsProvider;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModBlockTagProvider extends BlockTagsProvider {
     public ModBlockTagProvider(DataGenerator generator, String modId, ExistingFileHelper existingFileHelper) {
@@ -21,6 +25,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.ASTEROID_BLOCK.get());
 
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.BLACKSTONE_DEBRIS_ORE.get())
+                .add(ModBlocks.BLACKSTONE_URANIUM_ORE.get())
+                .add(ModBlocks.BLACKSTONE_DIAMOND_ORE.get())
+                .add(ModBlocks.BLACKSTONE_EMERALD_ORE.get())
+                .add(ModBlocks.BLACKSTONE_OSMIUM_ORE.get());
+
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.SPACE_PORTAL_FRAME.get())
@@ -29,7 +40,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.MARS_PORTAL_FRAME.get())
                 .add(ModBlocks.MOON_PORTAL_FRAME.get())
                 .add(ModBlocks.ASTEROID_BLOCK.get())
-                .add(ModBlocks.GLOWSTONE_LANTERN.get());
+                .add(ModBlocks.GLOWSTONE_LANTERN.get())
+                .add(ModBlocks.BLACKSTONE_DEBRIS_ORE.get())
+                .add(ModBlocks.BLACKSTONE_URANIUM_ORE.get())
+                .add(ModBlocks.BLACKSTONE_DIAMOND_ORE.get())
+                .add(ModBlocks.BLACKSTONE_EMERALD_ORE.get())
+                .add(ModBlocks.BLACKSTONE_OSMIUM_ORE.get())
+                .add(ModBlocks.GRAVITY_GENERATOR.get());
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(ModBlocks.VENUS_FUNGUS.get())
@@ -52,14 +69,19 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.MOON_FRAME_BLOCKS)
                 .add(ModBlocks.MOON_PORTAL_FRAME.get());
 
-
-
-
-
-
         tag(ModTags.Blocks.BANNED_IN_SPACE_BLOCKS)
                 .addTags(BlockTags.SAPLINGS)
                 .add(Blocks.ICE);
+
+        tag(ModTags.Blocks.VENUS_ORE_REPLACEABLES)
+                .add(Blocks.BLACKSTONE);
+
+        tag(Tags.Blocks.ORES)
+                .add(ModBlocks.BLACKSTONE_DEBRIS_ORE.get())
+                .add(ModBlocks.BLACKSTONE_URANIUM_ORE.get())
+                .add(ModBlocks.BLACKSTONE_DIAMOND_ORE.get())
+                .add(ModBlocks.BLACKSTONE_EMERALD_ORE.get())
+                .add(ModBlocks.BLACKSTONE_OSMIUM_ORE.get());
 
     }
 

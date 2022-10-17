@@ -25,6 +25,8 @@ public class ModTags {
         public static final TagKey<Block> MOON_FRAME_BLOCKS = tag("moon_frame_blocks");
         public static final TagKey<Block> BANNED_IN_SPACE_BLOCKS = tag("banned_in_space_blocks");
 
+        public static final TagKey<Block> VENUS_ORE_REPLACEABLES = tag("venus_ore_replaceables");
+
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(Cosmopolis.MOD_ID, name));
         }
