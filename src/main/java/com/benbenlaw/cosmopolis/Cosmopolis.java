@@ -4,6 +4,7 @@ import com.benbenlaw.cosmopolis.block.ModBlocks;
 import com.benbenlaw.cosmopolis.block.entity.ModBlockEntities;
 import com.benbenlaw.cosmopolis.config.CosmopolisConfigFile;
 import com.benbenlaw.cosmopolis.effect.ModEffects;
+import com.benbenlaw.cosmopolis.entity.ModEntities;
 import com.benbenlaw.cosmopolis.item.ModItems;
 import com.benbenlaw.cosmopolis.villager.ModPOIs;
 import com.benbenlaw.cosmopolis.world.ModBiomes;
@@ -46,6 +47,7 @@ public class Cosmopolis {
         ModStructures.register(eventBus);
         ModPOIs.register(eventBus);
         ModEffects.register(eventBus);
+        ModEntities.register(eventBus);
 
         ModConfiguredFeatures.register(eventBus);
         ModPlacedFeatures.register(eventBus);

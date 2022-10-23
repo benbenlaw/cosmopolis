@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ASA",
+    "ASA"
+  ],
+  "key": {
+    "A": {
+      "item": "cosmopolis:artificial_planks"
+    },
+    "S": {
+      "item": "cosmopolis:artificial_stick"
+    }
+  },
+  "result": {
+    "item": "cosmopolis:artificial_fence",
+    "count": 3
+  }
+}

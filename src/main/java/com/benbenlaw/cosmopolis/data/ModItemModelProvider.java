@@ -46,6 +46,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SPACE_SUIT_HELMET);
         simpleItem(ModItems.HOT_ASTEROID_STEW);
 
+        simpleItem(ModItems.RAW_OSMIUM);
+        simpleItem(ModItems.RAW_URANIUM);
+
         //Torches
 
         simpleTorch(ModItems.STONE_TORCH);
@@ -63,7 +66,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         //Block Models
 
         simpleBlock(ModBlocks.ARTIFICIAL_PLANKS);
+        withExistingParent("artificial_slab", modLoc("block/artificial_slab"));
+        withExistingParent("artificial_stairs", modLoc("block/artificial_stairs"));
+    //    withExistingParent("artificial_fence", modLoc("block/artificial_fence_post"));
+        withExistingParent("artificial_fence_gate", modLoc("block/artificial_fence_gate"));
+    //    withExistingParent("artificial_door", modLoc("item/artificial_door"));
+        
         simpleBlock(ModBlocks.ASTEROID_BLOCK);
+        withExistingParent("asteroid_slab", modLoc("block/asteroid_slab"));
+        withExistingParent("asteroid_stairs", modLoc("block/asteroid_stairs"));
+
         simpleBlock(ModBlocks.MARS_FUNGUS);
         simpleBlock(ModBlocks.VENUS_FUNGUS);
         simpleBlock(ModBlocks.MINING_BELT_PORTAL_FRAME);

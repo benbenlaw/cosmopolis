@@ -16,7 +16,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 group = 'cosmopolis'
-version = '1.19.X-13.0'
+version = '1.19.X-14.0'
 
 java {
     archivesBaseName = 'cosmopolis'

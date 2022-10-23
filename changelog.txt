@@ -1,5 +1,15 @@
 Cosmopolis Mod Changelog
 
+14.0
+
+Added recipe for clay block
+Fixed portal frame blocks having no names, fixed portal blocks missing names as well
+Added loot tables for venus ores
+Added raw osmium and raw uranium
+Add walls stairs, slabs ect for asteroid block and artificial planks
+Added datagen for recipes if i want to add more blocks in the future
+Update license
+
 13.0
 
 Disabled player fall damage in space biomes

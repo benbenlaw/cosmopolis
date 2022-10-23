@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right_open",
+  "textures": {
+    "bottom": "cosmopolis:block/artificial_planks",
+    "top": "cosmopolis:block/artificial_planks"
+  }
+}

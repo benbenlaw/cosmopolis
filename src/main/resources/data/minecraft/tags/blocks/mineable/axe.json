@@ -1,5 +1,10 @@
 {
   "values": [
-    "cosmopolis:artificial_planks"
+    "cosmopolis:artificial_planks",
+    "cosmopolis:artificial_slab",
+    "cosmopolis:artificial_stairs",
+    "cosmopolis:artificial_fence",
+    "cosmopolis:artificial_fence_gate",
+    "cosmopolis:artificial_door"
   ]
 }

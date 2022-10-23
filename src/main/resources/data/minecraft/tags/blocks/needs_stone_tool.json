@@ -1,5 +1,8 @@
 {
   "values": [
-    "cosmopolis:asteroid_block"
+    "cosmopolis:asteroid_block",
+    "cosmopolis:asteroid_slab",
+    "cosmopolis:asteroid_stairs",
+    "cosmopolis:asteroid_wall"
   ]
 }

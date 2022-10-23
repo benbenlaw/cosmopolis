@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "cosmopolis:block/asteroid_block",
+    "side": "cosmopolis:block/asteroid_block",
+    "top": "cosmopolis:block/asteroid_block"
+  }
+}

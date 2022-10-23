@@ -36,6 +36,44 @@ public class ModBlocks {
                     .noOcclusion()
                     .sound(SoundType.STONE)));
 
+    //Asteroid Blocks
+
+
+    public static final RegistryObject<Block> ASTEROID_BLOCK = registerBlock("asteroid_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ASTEROID_STAIRS = registerBlock("asteroid_stairs",
+            () -> new StairBlock(() -> ModBlocks.ASTEROID_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ASTEROID_SLAB = registerBlock("asteroid_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ASTEROID_WALL = registerBlock("asteroid_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+
+    //Artificial Planks
+
+    public static final RegistryObject<Block> ARTIFICIAL_PLANKS = registerBlock("artificial_planks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f, 3f).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> ARTIFICIAL_STAIRS = registerBlock("artificial_stairs",
+            () -> new StairBlock(() -> ModBlocks.ASTEROID_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f, 3f).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> ARTIFICIAL_SLAB = registerBlock("artificial_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f, 3f).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> ARTIFICIAL_FENCE = registerBlock("artificial_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f, 3f).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> ARTIFICIAL_FENCE_GATE = registerBlock("artificial_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f, 3f).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> ARTIFICIAL_DOOR = registerBlock("artificial_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f, 3f).sound(SoundType.WOOD)));
+
+
 
     //New Blocks
 
@@ -53,12 +91,6 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BLACKSTONE_URANIUM_ORE = registerBlock("blackstone_uranium_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));
-
-    public static final RegistryObject<Block> ASTEROID_BLOCK = registerBlock("asteroid_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));
-
-    public static final RegistryObject<Block> ARTIFICIAL_PLANKS = registerBlock("artificial_planks",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f, 3f).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> VENUS_FUNGUS = registerBlock("venus_fungus",
             () -> new Block(BlockBehaviour.Properties.of(Material.PLANT).strength(0.5f, 0.5f).sound(SoundType.CROP)));

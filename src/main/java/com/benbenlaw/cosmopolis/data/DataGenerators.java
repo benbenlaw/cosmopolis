@@ -24,5 +24,7 @@ public class DataGenerators {
 
         generator.addProvider(true, new ModBiomeTagsProvider(generator, existingFileHelper));
 
+        generator.addProvider(true, new ModRecipeProvider(generator));
+
     }
 }

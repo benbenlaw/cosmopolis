@@ -6,6 +6,7 @@ import com.benbenlaw.cosmopolis.util.ModTags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.TagEntry;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.ForgeMod;
 import net.minecraftforge.common.Tags;
@@ -23,7 +24,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags() {
 
         tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.ASTEROID_BLOCK.get());
+                .add(ModBlocks.ASTEROID_BLOCK.get())
+                .add(ModBlocks.ASTEROID_SLAB.get())
+                .add(ModBlocks.ASTEROID_STAIRS.get())
+                .add(ModBlocks.ASTEROID_WALL.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BLACKSTONE_DEBRIS_ORE.get())
@@ -40,6 +44,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.MARS_PORTAL_FRAME.get())
                 .add(ModBlocks.MOON_PORTAL_FRAME.get())
                 .add(ModBlocks.ASTEROID_BLOCK.get())
+                .add(ModBlocks.ASTEROID_SLAB.get())
+                .add(ModBlocks.ASTEROID_STAIRS.get())
+                .add(ModBlocks.ASTEROID_WALL.get())
                 .add(ModBlocks.GLOWSTONE_LANTERN.get())
                 .add(ModBlocks.BLACKSTONE_DEBRIS_ORE.get())
                 .add(ModBlocks.BLACKSTONE_URANIUM_ORE.get())
@@ -52,7 +59,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.VENUS_FUNGUS.get())
                 .add(ModBlocks.MARS_FUNGUS.get());
 
-        tag(BlockTags.MINEABLE_WITH_AXE).add(ModBlocks.ARTIFICIAL_PLANKS.get());
+        tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.ARTIFICIAL_PLANKS.get())
+                .add(ModBlocks.ARTIFICIAL_SLAB.get())
+                .add(ModBlocks.ARTIFICIAL_STAIRS.get())
+                .add(ModBlocks.ARTIFICIAL_FENCE.get())
+                .add(ModBlocks.ARTIFICIAL_FENCE_GATE.get())
+                .add(ModBlocks.ARTIFICIAL_DOOR.get());
 
         tag(ModTags.Blocks.MINING_BELT_FRAME_BLOCKS)
                 .add(ModBlocks.MINING_BELT_PORTAL_FRAME.get());
@@ -82,6 +95,17 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BLACKSTONE_DIAMOND_ORE.get())
                 .add(ModBlocks.BLACKSTONE_EMERALD_ORE.get())
                 .add(ModBlocks.BLACKSTONE_OSMIUM_ORE.get());
+
+        tag(Tags.Blocks.ORES_DIAMOND).add(ModBlocks.BLACKSTONE_DIAMOND_ORE.get());
+        tag(Tags.Blocks.ORES_EMERALD).add(ModBlocks.BLACKSTONE_EMERALD_ORE.get());
+        tag(Tags.Blocks.ORES_NETHERITE_SCRAP).add(ModBlocks.BLACKSTONE_DEBRIS_ORE.get());
+        tag(ModTags.Blocks.ORES_URANIUM).add(ModBlocks.BLACKSTONE_URANIUM_ORE.get());
+        tag(ModTags.Blocks.ORES_OSMIUM).add(ModBlocks.BLACKSTONE_OSMIUM_ORE.get());
+
+        tag(BlockTags.WALLS).add(ModBlocks.ASTEROID_WALL.get());
+        tag(BlockTags.FENCES).add(ModBlocks.ARTIFICIAL_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.ARTIFICIAL_FENCE_GATE.get());
+
 
     }
 

@@ -27,6 +27,9 @@ public class ModTags {
 
         public static final TagKey<Block> VENUS_ORE_REPLACEABLES = tag("venus_ore_replaceables");
 
+        public static final TagKey<Block> ORES_URANIUM = forgeTag("ores/uranium");
+        public static final TagKey<Block> ORES_OSMIUM = forgeTag("ores/osmium");
+
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(Cosmopolis.MOD_ID, name));
         }
@@ -45,6 +48,12 @@ public class ModTags {
 
         public static final TagKey<Item> ASTEROID_ROCKS = tag("asteroid_rocks");
         public static final TagKey<Item> BANNED_IN_SPACE_ITEMS = tag("banned_in_space_items");
+
+        public static final TagKey<Item> ORES_URANIUM = forgeTag("ores/uranium");
+        public static final TagKey<Item> ORES_OSMIUM = forgeTag("ores/osmium");
+
+        public static final TagKey<Item> RAW_MATERIALS_URANIUM = forgeTag("raw_materials/uranium");
+        public static final TagKey<Item> RAW_MATERIALS_OSMIUM = forgeTag("raw_materials/osmium");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(Cosmopolis.MOD_ID, name));

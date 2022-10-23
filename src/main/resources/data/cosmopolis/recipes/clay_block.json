@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " W ",
+    "WDW",
+    " W "
+  ],
+  "key": {
+    "W": {
+      "item": "cosmopolis:water_drop"
+    },
+    "D": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "minecraft:clay"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cosmopolis:block/artificial_slab"
+    },
+    "type=double": {
+      "model": "cosmopolis:block/artificial_planks"
+    },
+    "type=top": {
+      "model": "cosmopolis:block/artificial_slab_top"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "cosmopolis:asteroid_block"
+    }
+  },
+  "result": {
+    "item": "cosmopolis:asteroid_wall",
+    "count": 6
+  }
+}

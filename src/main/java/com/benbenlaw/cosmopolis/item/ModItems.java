@@ -70,6 +70,12 @@ public class ModItems {
 
 //Misc
 
+    public static final RegistryObject<Item> RAW_URANIUM = ITEMS.register("raw_uranium", () -> new Item(
+            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
+
+    public static final RegistryObject<Item> RAW_OSMIUM = ITEMS.register("raw_osmium", () -> new Item(
+            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
+
     public static final RegistryObject<Item> SPACE_SUIT_UPGRADE = ITEMS.register("space_suit_upgrade", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 

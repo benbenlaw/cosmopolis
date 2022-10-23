@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "cosmopolis:block/artificial_planks",
+    "side": "cosmopolis:block/artificial_planks",
+    "top": "cosmopolis:block/artificial_planks"
+  }
+}
