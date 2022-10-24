@@ -38,6 +38,10 @@ public class ModBlockStatesProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.BLACKSTONE_EMERALD_ORE.get());
         simpleBlock(ModBlocks.BLACKSTONE_DIAMOND_ORE.get());
         simpleBlock(ModBlocks.BLACKSTONE_OSMIUM_ORE.get());
+        simpleBlock(ModBlocks.BLACKSTONE_CHEESE_ORE.get());
+        simpleBlock(ModBlocks.ORGANIC_POWDER_SEED_BLOCK.get());
+        simpleBlock(ModBlocks.ORGANIC_POWDER_FUNGUS_BLOCK.get());
+        simpleBlock(ModBlocks.ORGANIC_POWDER_SAPLING_BLOCK.get());
 
         horizontalBlock(ModBlocks.GRAVITY_GENERATOR.get(), models().orientable("gravity_generator",
                 modLoc("block/gravity_generator_side"), modLoc("block/gravity_generator_front"), modLoc("block/gravity_generator_top")));

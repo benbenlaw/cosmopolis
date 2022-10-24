@@ -18,6 +18,13 @@ public class ModPlacedFeatures {
     //Spawn Essence Ore in Overworld
     //TODO: work out how to get config values correct instead of .getDefault() using .get() //
 
+    public static final RegistryObject<PlacedFeature> MOON_CHEESE_ORE_PLACED = PLACED_FEATURES.register("moon_cheese_ore_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.CHEESE_ORE_MOON.getHolder().get(),
+                    commonOrePlacement(8, // VeinsPerChunk
+                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-60),
+                                    VerticalAnchor.aboveBottom(120)))));
+
+
     public static final RegistryObject<PlacedFeature> VENUS_DIAMOND_ORE_PLACED = PLACED_FEATURES.register("venus_diamond_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.DIAMOND_ORE_VENUS.getHolder().get(),
                     commonOrePlacement(8, // VeinsPerChunk

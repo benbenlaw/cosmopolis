@@ -1,5 +1,8 @@
 {
   "values": [
+    "cosmopolis:organic_powder_sapling_block",
+    "cosmopolis:organic_powder_seed_block",
+    "cosmopolis:organic_powder_fungus_block",
     "cosmopolis:artificial_planks",
     "cosmopolis:artificial_slab",
     "cosmopolis:artificial_stairs",

@@ -1,5 +1,15 @@
 Cosmopolis Mod Changelog
 
+1.14.1
+
+
+//todo add various different ores and unify instead of using venus or moon use space in ModConfigured Features and ModPlacedFeatures
+Added cheese ore to the moon and diamond ore
+Added cheese item (food) drops from cheese ore
+Ores need pickaxe to get resources
+Added 3 different organic blocks. Sapling, Seed and Fungus, when broken drop a random item from that block type tag (seed block drops a random seed)
+
+
 14.0
 
 Added recipe for clay block
@@ -9,6 +19,7 @@ Added raw osmium and raw uranium
 Add walls stairs, slabs ect for asteroid block and artificial planks
 Added datagen for recipes if i want to add more blocks in the future
 Update license
+Added part of the UFO code not working yet
 
 13.0
 

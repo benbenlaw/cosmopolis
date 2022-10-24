@@ -42,6 +42,13 @@ public class ModBlockLootTables extends BlockLoot {
         this.dropSelf(ModBlocks.GLOWSTONE_TORCH.get());
         this.dropSelf(ModBlocks.GRAVITY_GENERATOR.get());
 
+        this.add(ModBlocks.ORGANIC_POWDER_SAPLING_BLOCK.get(), (Block) -> noDrop());
+        this.add(ModBlocks.ORGANIC_POWDER_SEED_BLOCK.get(), (Block) -> noDrop());
+        this.add(ModBlocks.ORGANIC_POWDER_FUNGUS_BLOCK.get(), (Block) -> noDrop());
+
+        this.add(ModBlocks.BLACKSTONE_CHEESE_ORE.get(), (Block) ->
+                createOreDrop(ModBlocks.BLACKSTONE_CHEESE_ORE.get(), ModItems.CHEESE.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)));
+
         this.add(ModBlocks.BLACKSTONE_EMERALD_ORE.get(), (Block) ->
                 createOreDrop(ModBlocks.BLACKSTONE_EMERALD_ORE.get(), Items.EMERALD).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)));
 

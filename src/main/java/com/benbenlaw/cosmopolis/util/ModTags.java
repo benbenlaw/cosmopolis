@@ -29,6 +29,7 @@ public class ModTags {
 
         public static final TagKey<Block> ORES_URANIUM = forgeTag("ores/uranium");
         public static final TagKey<Block> ORES_OSMIUM = forgeTag("ores/osmium");
+        public static final TagKey<Block> ORES_CHEESE = forgeTag("ores/cheese");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(Cosmopolis.MOD_ID, name));
@@ -51,6 +52,7 @@ public class ModTags {
 
         public static final TagKey<Item> ORES_URANIUM = forgeTag("ores/uranium");
         public static final TagKey<Item> ORES_OSMIUM = forgeTag("ores/osmium");
+        public static final TagKey<Item> ORES_CHEESE = forgeTag("ores/cheese");
 
         public static final TagKey<Item> RAW_MATERIALS_URANIUM = forgeTag("raw_materials/uranium");
         public static final TagKey<Item> RAW_MATERIALS_OSMIUM = forgeTag("raw_materials/osmium");

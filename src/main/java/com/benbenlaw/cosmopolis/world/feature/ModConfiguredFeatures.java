@@ -21,6 +21,9 @@ public class ModConfiguredFeatures {
     public static final DeferredRegister<ConfiguredFeature<?, ?>> CONFIGURED_FEATURES =
             DeferredRegister.create(Registry.CONFIGURED_FEATURE_REGISTRY, Cosmopolis.MOD_ID);
 
+    public static final Supplier<List<OreConfiguration.TargetBlockState>> MOON_CHEESE_ORE = Suppliers.memoize(() -> List.of(
+            OreConfiguration.target(new TagMatchTest(ModTags.Blocks.VENUS_ORE_REPLACEABLES), ModBlocks.BLACKSTONE_CHEESE_ORE.get().defaultBlockState())));
+
     public static final Supplier<List<OreConfiguration.TargetBlockState>> VENUS_DIAMOND_ORE = Suppliers.memoize(() -> List.of(
             OreConfiguration.target(new TagMatchTest(ModTags.Blocks.VENUS_ORE_REPLACEABLES), ModBlocks.BLACKSTONE_DIAMOND_ORE.get().defaultBlockState())));
 
@@ -54,6 +57,9 @@ public class ModConfiguredFeatures {
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> URANIUM_ORE_VENUS = CONFIGURED_FEATURES.register("uranium_ore_venus",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(VENUS_URANIUM_ORE.get(),12)));
+
+    public static final RegistryObject<ConfiguredFeature<?, ?>> CHEESE_ORE_MOON = CONFIGURED_FEATURES.register("cheese_ore_moon",
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(MOON_CHEESE_ORE.get(),12)));
 
 
 

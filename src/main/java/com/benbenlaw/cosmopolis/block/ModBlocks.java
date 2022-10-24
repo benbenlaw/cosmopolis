@@ -73,24 +73,38 @@ public class ModBlocks {
     public static final RegistryObject<Block> ARTIFICIAL_DOOR = registerBlock("artificial_door",
             () -> new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0f, 3f).sound(SoundType.WOOD)));
 
+    //Organic Blocks
+
+    public static final RegistryObject<Block> ORGANIC_POWDER_SAPLING_BLOCK = registerBlock("organic_powder_sapling_block",
+            () -> new OrganicPowderSaplingBlock(BlockBehaviour.Properties.of(Material.MOSS).strength(0.5f, 2f).sound(SoundType.MUDDY_MANGROVE_ROOTS).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ORGANIC_POWDER_SEED_BLOCK = registerBlock("organic_powder_seed_block",
+            () -> new OrganicPowderSeedBlock(BlockBehaviour.Properties.of(Material.MOSS).strength(0.5f, 2f).sound(SoundType.MUDDY_MANGROVE_ROOTS).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ORGANIC_POWDER_FUNGUS_BLOCK = registerBlock("organic_powder_fungus_block",
+            () -> new OrganicPowderFungusBlock(BlockBehaviour.Properties.of(Material.MOSS).strength(0.5f, 2f).sound(SoundType.MUDDY_MANGROVE_ROOTS).requiresCorrectToolForDrops()));
 
 
     //New Blocks
 
+
+    public static final RegistryObject<Block> BLACKSTONE_CHEESE_ORE = registerBlock("blackstone_cheese_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> BLACKSTONE_DEBRIS_ORE = registerBlock("blackstone_debris_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> BLACKSTONE_EMERALD_ORE = registerBlock("blackstone_emerald_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> BLACKSTONE_DIAMOND_ORE = registerBlock("blackstone_diamond_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> BLACKSTONE_OSMIUM_ORE = registerBlock("blackstone_osmium_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> BLACKSTONE_URANIUM_ORE = registerBlock("blackstone_uranium_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> VENUS_FUNGUS = registerBlock("venus_fungus",
             () -> new Block(BlockBehaviour.Properties.of(Material.PLANT).strength(0.5f, 0.5f).sound(SoundType.CROP)));

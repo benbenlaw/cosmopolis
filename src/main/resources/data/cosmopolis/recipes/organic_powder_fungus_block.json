@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OSO",
+    "S S",
+    "OSO"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:mushrooms"
+    },
+    "O": {
+      "item": "cosmopolis:organic_powder"
+    }
+  },
+  "result": {
+    "item": "cosmopolis:organic_powder_fungus_block"
+  }
+}

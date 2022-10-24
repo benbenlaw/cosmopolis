@@ -45,6 +45,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SPACE_SUIT_LEGGINGS);
         simpleItem(ModItems.SPACE_SUIT_HELMET);
         simpleItem(ModItems.HOT_ASTEROID_STEW);
+        simpleItem(ModItems.CHEESE);
 
         simpleItem(ModItems.RAW_OSMIUM);
         simpleItem(ModItems.RAW_URANIUM);
@@ -93,6 +94,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlock(ModBlocks.BLACKSTONE_DIAMOND_ORE);
         simpleBlock(ModBlocks.BLACKSTONE_EMERALD_ORE);
         simpleBlock(ModBlocks.BLACKSTONE_OSMIUM_ORE);
+        simpleBlock(ModBlocks.BLACKSTONE_CHEESE_ORE);
+        simpleBlock(ModBlocks.ORGANIC_POWDER_FUNGUS_BLOCK);
+        simpleBlock(ModBlocks.ORGANIC_POWDER_SEED_BLOCK);
+        simpleBlock(ModBlocks.ORGANIC_POWDER_SAPLING_BLOCK);
 
 
 
