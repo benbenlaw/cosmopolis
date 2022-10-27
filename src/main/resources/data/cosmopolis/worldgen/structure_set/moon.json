@@ -1,0 +1,22 @@
+{
+  "structures": [
+    {
+      "structure": "cosmopolis:small_asteroid_moon",
+      "weight": 60
+    },
+    {
+      "structure": "cosmopolis:large_asteroid_moon",
+      "weight": 25
+    },
+    {
+      "structure": "cosmopolis:alien_house",
+      "weight": 15
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 7,
+    "separation": 3,
+    "salt": 64334345
+  }
+}

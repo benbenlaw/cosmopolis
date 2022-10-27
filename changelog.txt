@@ -1,9 +1,19 @@
 Cosmopolis Mod Changelog
 
+1.14.3
+
+Added "Alien Tech" item called Alien Artifact
+Added large asteroid, small asteroid and alien house to the moon
+
+1.14.2
+
+Disabled clouds on the moon
+Renamed ore placed features to `blackstone_cheese_ore_placed` instead of 'cheese_ore_moon' makes adding ores to other planets easier
+
+
 1.14.1
 
 
-//todo add various different ores and unify instead of using venus or moon use space in ModConfigured Features and ModPlacedFeatures
 Added cheese ore to the moon and diamond ore
 Added cheese item (food) drops from cheese ore
 Ores need pickaxe to get resources

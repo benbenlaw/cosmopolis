@@ -46,6 +46,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SPACE_SUIT_HELMET);
         simpleItem(ModItems.HOT_ASTEROID_STEW);
         simpleItem(ModItems.CHEESE);
+        simpleItem(ModItems.ALIEN_ARTIFACT);
 
         simpleItem(ModItems.RAW_OSMIUM);
         simpleItem(ModItems.RAW_URANIUM);

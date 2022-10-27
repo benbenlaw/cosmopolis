@@ -3,6 +3,9 @@
     "generator": {
       "type": "minecraft:noise",
       "settings": "cosmopolis:moon",
+
+      "structure_overrides": ["cosmopolis:moon"],
+
       "biome_source": {
         "type": "minecraft:multi_noise",
         "biomes": [

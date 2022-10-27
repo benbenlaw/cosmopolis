@@ -18,47 +18,41 @@ public class ModPlacedFeatures {
     //Spawn Essence Ore in Overworld
     //TODO: work out how to get config values correct instead of .getDefault() using .get() //
 
-    public static final RegistryObject<PlacedFeature> MOON_CHEESE_ORE_PLACED = PLACED_FEATURES.register("moon_cheese_ore_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.CHEESE_ORE_MOON.getHolder().get(),
-                    commonOrePlacement(8, // VeinsPerChunk
-                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-60),
-                                    VerticalAnchor.aboveBottom(120)))));
-
-
-    public static final RegistryObject<PlacedFeature> VENUS_DIAMOND_ORE_PLACED = PLACED_FEATURES.register("venus_diamond_ore_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.DIAMOND_ORE_VENUS.getHolder().get(),
+    public static final RegistryObject<PlacedFeature> BLACKSTONE_CHEESE_ORE_PLACED = PLACED_FEATURES.register("blackstone_cheese_ore_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.BLACKSTONE_CHEESE_ORE_COSMOPOLIS.getHolder().get(),
                     commonOrePlacement(8, // VeinsPerChunk
                     HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-60),
                     VerticalAnchor.aboveBottom(120)))));
 
-    public static final RegistryObject<PlacedFeature> VENUS_EMERALD_ORE_PLACED = PLACED_FEATURES.register("venus_emerald_ore_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.EMERALD_ORE_VENUS.getHolder().get(),
+    public static final RegistryObject<PlacedFeature> BLACKSTONE_DIAMOND_ORE_PLACED = PLACED_FEATURES.register("blackstone_diamond_ore_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.BLACKSTONE_DIAMOND_ORE_COSMOPOLIS.getHolder().get(),
                     commonOrePlacement(8, // VeinsPerChunk
                     HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-60),
                     VerticalAnchor.aboveBottom(120)))));
 
-    public static final RegistryObject<PlacedFeature> VENUS_OSMIUM_ORE_PLACED = PLACED_FEATURES.register("venus_osmium_ore_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.OSMIUM_ORE_VENUS.getHolder().get(),
+    public static final RegistryObject<PlacedFeature> BLACKSTONE_EMERALD_ORE_PLACED = PLACED_FEATURES.register("blackstone_emerald_ore_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.BLACKSTONE_EMERALD_ORE_COSMOPOLIS.getHolder().get(),
+                    commonOrePlacement(8, // VeinsPerChunk
+                    HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-60),
+                    VerticalAnchor.aboveBottom(120)))));
+
+    public static final RegistryObject<PlacedFeature> BLACKSTONE_OSMIUM_ORE_PLACED = PLACED_FEATURES.register("blackstone_osmium_ore_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.BLACKSTONE_OSMIUM_ORE_COSMOPOLIS.getHolder().get(),
                     commonOrePlacement(10, // VeinsPerChunk
                     HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-60),
                     VerticalAnchor.aboveBottom(120)))));
 
-    public static final RegistryObject<PlacedFeature> VENUS_DEBRIS_ORE_PLACED = PLACED_FEATURES.register("venus_debris_ore_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.DEBRIS_ORE_VENUS.getHolder().get(),
+    public static final RegistryObject<PlacedFeature> BLACKSTONE_DEBRIS_ORE_PLACED = PLACED_FEATURES.register("blackstone_debris_ore_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.BLACKSTONE_DEBRIS_ORE_COSMOPOLIS.getHolder().get(),
                     commonOrePlacement(12, // VeinsPerChunk
                     HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-60),
                     VerticalAnchor.aboveBottom(120)))));
 
-    public static final RegistryObject<PlacedFeature> VENUS_URANIUM_ORE_PLACED = PLACED_FEATURES.register("venus_uranium_ore_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.URANIUM_ORE_VENUS.getHolder().get(),
+    public static final RegistryObject<PlacedFeature> BLACKSTONE_URANIUM_ORE_PLACED = PLACED_FEATURES.register("blackstone_uranium_ore_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.BLACKSTONE_URANIUM_ORE_COSMOPOLIS.getHolder().get(),
                     commonOrePlacement(12, // VeinsPerChunk
                     HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-60),
                     VerticalAnchor.aboveBottom(120)))));
-
-
-
-
-
 
 
 

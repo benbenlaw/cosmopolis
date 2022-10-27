@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#cosmopolis:is_venus",
-  "features": "cosmopolis:venus_osmium_ore_placed",
+  "features": "cosmopolis:blackstone_osmium_ore_placed",
   "step": "underground_ores"
 }

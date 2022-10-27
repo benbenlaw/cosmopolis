@@ -17,6 +17,9 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Cosmopolis.MOD_ID);
 
+    public static final RegistryObject<Item> ALIEN_ARTIFACT = ITEMS.register("alien_artifact", () -> new SimpleFoiledItem(
+            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
+
     public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)
                     .food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F).build())));
