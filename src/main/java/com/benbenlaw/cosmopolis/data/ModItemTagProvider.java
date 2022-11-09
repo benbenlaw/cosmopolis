@@ -56,6 +56,15 @@ public class ModItemTagProvider extends ItemTagsProvider {
           tag(ModTags.Items.ORES_OSMIUM).add(ModBlocks.BLACKSTONE_OSMIUM_ORE.get().asItem());
           tag(ModTags.Items.ORES_CHEESE).add(ModBlocks.BLACKSTONE_CHEESE_ORE.get().asItem());
 
+          tag(Tags.Items.TOOLS_HOES).add(ModItems.ASTEROID_HOE.get());
+          tag(Tags.Items.TOOLS_PICKAXES).add(ModItems.ASTEROID_PICKAXE.get());
+          tag(ItemTags.CLUSTER_MAX_HARVESTABLES).add(ModItems.ASTEROID_PICKAXE.get());
+          tag(Tags.Items.TOOLS_SWORDS).add(ModItems.ASTEROID_SWORD.get());
+          tag(Tags.Items.TOOLS_SHOVELS).add(ModItems.ASTEROID_SHOVEL.get());
+          tag(Tags.Items.TOOLS_AXES).add(ModItems.ASTEROID_AXE.get());
+          tag(ModTags.Items.TOOLS_PAXELS).add(ModItems.HAMMER.get());
+
+
           tag(Tags.Items.RAW_MATERIALS)
                   .add(ModItems.RAW_OSMIUM.get())
                   .add(ModItems.RAW_URANIUM.get());

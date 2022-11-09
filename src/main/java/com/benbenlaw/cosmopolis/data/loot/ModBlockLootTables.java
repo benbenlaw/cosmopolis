@@ -11,6 +11,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -21,10 +23,21 @@ public class ModBlockLootTables extends BlockLoot {
     }
 
     private void simpleDrops() {
-        this.dropSelf(ModBlocks.ASTEROID_BLOCK.get());
+        this.dropOther(ModBlocks.ASTEROID_BLOCK.get(), (ModItems.ASTEROID_ROCK.get()));
         this.dropSelf(ModBlocks.ASTEROID_SLAB.get());
         this.dropSelf(ModBlocks.ASTEROID_STAIRS.get());
         this.dropSelf(ModBlocks.ASTEROID_WALL.get());
+
+        this.dropSelf(ModBlocks.ASTEROID_BRICKS.get());
+        this.dropSelf(ModBlocks.ASTEROID_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.ASTEROID_BRICK_SLAB.get());
+        this.dropSelf(ModBlocks.ASTEROID_BRICK_WALL.get());
+        
+        this.dropSelf(ModBlocks.ASTEROID_TILES.get());
+        this.dropSelf(ModBlocks.ASTEROID_TILE_STAIRS.get());
+        this.dropSelf(ModBlocks.ASTEROID_TILE_SLAB.get());
+        this.dropSelf(ModBlocks.ASTEROID_TILE_WALL.get());
+
         this.dropSelf(ModBlocks.ARTIFICIAL_PLANKS.get());
         this.dropSelf(ModBlocks.ARTIFICIAL_FENCE_GATE.get());
         this.dropSelf(ModBlocks.ARTIFICIAL_FENCE.get());
@@ -64,7 +77,6 @@ public class ModBlockLootTables extends BlockLoot {
         this.add(ModBlocks.BLACKSTONE_URANIUM_ORE.get(), (Block) ->
                 createOreDrop(ModBlocks.BLACKSTONE_URANIUM_ORE.get(), ModItems.RAW_URANIUM.get()).apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE)));
 
-     //   this.add(ModBlocks.ASTEROID_BLOCK.get(), (Block) -> createSilkTouchDispatchTable())
 
     }
 
@@ -73,6 +85,8 @@ public class ModBlockLootTables extends BlockLoot {
     protected Iterable<Block> getKnownBlocks() {
         return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
     }
+
+
 
 
 }

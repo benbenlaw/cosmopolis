@@ -78,6 +78,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("asteroid_slab", modLoc("block/asteroid_slab"));
         withExistingParent("asteroid_stairs", modLoc("block/asteroid_stairs"));
 
+        simpleBlock(ModBlocks.ASTEROID_BRICKS);
+        withExistingParent("asteroid_brick_slab", modLoc("block/asteroid_brick_slab"));
+        withExistingParent("asteroid_brick_stairs", modLoc("block/asteroid_brick_stairs"));
+        
+        simpleBlock(ModBlocks.ASTEROID_TILES);
+        withExistingParent("asteroid_tile_slab", modLoc("block/asteroid_tile_slab"));
+        withExistingParent("asteroid_tile_stairs", modLoc("block/asteroid_tile_stairs"));
+
         simpleBlock(ModBlocks.MARS_FUNGUS);
         simpleBlock(ModBlocks.VENUS_FUNGUS);
         simpleBlock(ModBlocks.MINING_BELT_PORTAL_FRAME);

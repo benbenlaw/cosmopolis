@@ -46,9 +46,14 @@ public class InformationJEI implements IModPlugin {
                 Component.translatable("jei.cosmopolis.venus_ores"));
        reg.addIngredientInfo(new ItemStack(ModBlocks.BLACKSTONE_OSMIUM_ORE.get()), VanillaTypes.ITEM_STACK,
                 Component.translatable("jei.cosmopolis.venus_ores"));
-
        reg.addIngredientInfo(new ItemStack(ModBlocks.GRAVITY_GENERATOR.get()), VanillaTypes.ITEM_STACK,
                 Component.translatable("jei.cosmopolis.gravity_generator"));
+       reg.addIngredientInfo(new ItemStack(ModBlocks.ORGANIC_POWDER_SAPLING_BLOCK.get()), VanillaTypes.ITEM_STACK,
+                Component.translatable("jei.cosmopolis.organic_blocks"));
+       reg.addIngredientInfo(new ItemStack(ModBlocks.ORGANIC_POWDER_SEED_BLOCK.get()), VanillaTypes.ITEM_STACK,
+                Component.translatable("jei.cosmopolis.organic_blocks"));
+       reg.addIngredientInfo(new ItemStack(ModBlocks.ORGANIC_POWDER_FUNGUS_BLOCK.get()), VanillaTypes.ITEM_STACK,
+                Component.translatable("jei.cosmopolis.organic_blocks"));
 
     }
 }

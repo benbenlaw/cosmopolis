@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cosmopolis:block/asteroid_tile_slab"
+    },
+    "type=double": {
+      "model": "cosmopolis:block/asteroid_tiles"
+    },
+    "type=top": {
+      "model": "cosmopolis:block/asteroid_tile_slab_top"
+    }
+  }
+}

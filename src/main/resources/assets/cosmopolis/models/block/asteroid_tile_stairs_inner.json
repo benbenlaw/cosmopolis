@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "cosmopolis:block/asteroid_tiles",
+    "side": "cosmopolis:block/asteroid_tiles",
+    "top": "cosmopolis:block/asteroid_tiles"
+  }
+}

@@ -19,6 +19,16 @@ public class ModBlockStatesProvider extends BlockStateProvider {
         wallBlock((WallBlock) ModBlocks.ASTEROID_WALL.get(), blockTexture(ModBlocks.ASTEROID_BLOCK.get()));
         slabBlock((SlabBlock) ModBlocks.ASTEROID_SLAB.get(), blockTexture(ModBlocks.ASTEROID_BLOCK.get()), blockTexture(ModBlocks.ASTEROID_BLOCK.get()));
 
+        simpleBlock(ModBlocks.ASTEROID_BRICKS.get());
+        stairsBlock((StairBlock) ModBlocks.ASTEROID_BRICK_STAIRS.get(), blockTexture(ModBlocks.ASTEROID_BRICKS.get()));
+        wallBlock((WallBlock) ModBlocks.ASTEROID_BRICK_WALL.get(), blockTexture(ModBlocks.ASTEROID_BRICKS.get()));
+        slabBlock((SlabBlock) ModBlocks.ASTEROID_BRICK_SLAB.get(), blockTexture(ModBlocks.ASTEROID_BRICKS.get()), blockTexture(ModBlocks.ASTEROID_BRICKS.get()));
+
+        simpleBlock(ModBlocks.ASTEROID_TILES.get());
+        stairsBlock((StairBlock) ModBlocks.ASTEROID_TILE_STAIRS.get(), blockTexture(ModBlocks.ASTEROID_TILES.get()));
+        wallBlock((WallBlock) ModBlocks.ASTEROID_TILE_WALL.get(), blockTexture(ModBlocks.ASTEROID_TILES.get()));
+        slabBlock((SlabBlock) ModBlocks.ASTEROID_TILE_SLAB.get(), blockTexture(ModBlocks.ASTEROID_TILES.get()), blockTexture(ModBlocks.ASTEROID_TILES.get()));
+
         simpleBlock(ModBlocks.ARTIFICIAL_PLANKS.get());
         stairsBlock((StairBlock) ModBlocks.ARTIFICIAL_STAIRS.get(), blockTexture(ModBlocks.ARTIFICIAL_PLANKS.get()));
         slabBlock((SlabBlock) ModBlocks.ARTIFICIAL_SLAB.get(), blockTexture(ModBlocks.ARTIFICIAL_PLANKS.get()), blockTexture(ModBlocks.ARTIFICIAL_PLANKS.get()));

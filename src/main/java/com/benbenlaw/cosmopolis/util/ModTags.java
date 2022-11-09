@@ -2,18 +2,16 @@ package com.benbenlaw.cosmopolis.util;
 
 import com.benbenlaw.cosmopolis.Cosmopolis;
 import net.minecraft.core.Registry;
-import net.minecraft.data.tags.BiomeTagsProvider;
-import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BiomeTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.common.BiomeManager;
-import net.minecraftforge.common.Tags;
+
+import javax.swing.text.html.parser.Entity;
 
 public class ModTags {
 
@@ -56,6 +54,7 @@ public class ModTags {
 
         public static final TagKey<Item> RAW_MATERIALS_URANIUM = forgeTag("raw_materials/uranium");
         public static final TagKey<Item> RAW_MATERIALS_OSMIUM = forgeTag("raw_materials/osmium");
+        public static final TagKey<Item> TOOLS_PAXELS = forgeTag("tools/paxels");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(Cosmopolis.MOD_ID, name));
@@ -86,4 +85,17 @@ public class ModTags {
 
     }
 
+    public static class Entities {
+
+        public static final TagKey<EntityType<?>> IMMUNE_IN_SPACE = tag("immune_in_space");
+
+
+        private static TagKey<EntityType<?>> tag(String name) {
+            return TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation(Cosmopolis.MOD_ID, name));
+        }
+
+        private static TagKey<EntityType<?>> forgeTag(String name) {
+            return TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge", name));
+        }
+    }
 }

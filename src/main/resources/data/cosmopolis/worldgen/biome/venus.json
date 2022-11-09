@@ -17,7 +17,22 @@
         "probability": 0.025
       }
     },
-    "spawners": {},
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:enderman",
+        "weight": 40,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:blaze",
+        "weight": 60,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ]
+  },
     "spawn_costs": {},
     "carvers": {
       "air": [

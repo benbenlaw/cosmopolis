@@ -1,5 +1,7 @@
 {
   "values": [
-    "cosmopolis:asteroid_wall"
+    "cosmopolis:asteroid_wall",
+    "cosmopolis:asteroid_brick_wall",
+    "cosmopolis:asteroid_tile_wall"
   ]
 }

@@ -27,9 +27,6 @@ public class ModItems {
     public static final RegistryObject<Item> ROCK = ITEMS.register("rock", () -> new Item(
             new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 
-    public static final RegistryObject<Item> HAMMER = ITEMS.register("hammer", () -> new HammerItem(
-            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)
-                    .durability(128)));
 
     public static final RegistryObject<Item> ASTEROID_ROCK = ITEMS.register("asteroid_rock", () -> new AsteroidRockItem(true));
     public static final RegistryObject<Item> MINI_COAL = ITEMS.register("mini_coal", () -> new MiniCoalItem(true));
@@ -54,6 +51,10 @@ public class ModItems {
             new  Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 
 //Tools
+
+    public static final RegistryObject<Item> HAMMER = ITEMS.register("hammer", () ->
+            new PickaxeItem(ModTiers.ASTEROID, 1, 1f,
+            new Item.Properties().tab(ModCreativeModTab.COSMOPOLIS)));
 
     public static final RegistryObject<Item> ASTEROID_PICKAXE = ITEMS.register("asteroid_pickaxe", () ->
             new PickaxeItem(ModTiers.ASTEROID, 1, 1f,

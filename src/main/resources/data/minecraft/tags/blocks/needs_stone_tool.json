@@ -3,6 +3,14 @@
     "cosmopolis:asteroid_block",
     "cosmopolis:asteroid_slab",
     "cosmopolis:asteroid_stairs",
-    "cosmopolis:asteroid_wall"
+    "cosmopolis:asteroid_wall",
+    "cosmopolis:asteroid_bricks",
+    "cosmopolis:asteroid_brick_slab",
+    "cosmopolis:asteroid_brick_stairs",
+    "cosmopolis:asteroid_brick_wall",
+    "cosmopolis:asteroid_tiles",
+    "cosmopolis:asteroid_tile_slab",
+    "cosmopolis:asteroid_tile_stairs",
+    "cosmopolis:asteroid_tile_wall"
   ]
 }

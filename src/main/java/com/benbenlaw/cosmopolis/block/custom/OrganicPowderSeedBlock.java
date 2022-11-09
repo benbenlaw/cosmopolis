@@ -22,14 +22,6 @@ public class OrganicPowderSeedBlock extends Block {
         super(pProperties);
     }
 
-
-
-    @Override
-    public void destroy(LevelAccessor pLevel, BlockPos pPos, BlockState pState) {
-        pLevel.addFreshEntity(new ItemEntity((Level) pLevel, pPos.getX() + 0.5, pPos.getY() + 0.5, pPos.getZ() + 0.5,
-                new ItemStack(this)));
-    }
-
     @Override
     public boolean onDestroyedByPlayer(BlockState state, Level level, BlockPos pos, Player player, boolean willHarvest, FluidState fluid) {
 

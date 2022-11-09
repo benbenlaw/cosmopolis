@@ -17,6 +17,9 @@ public class ModEffects {
     public static final RegistryObject<MobEffect> NO_OXYGEN = MOB_EFFECTS.register("no_oxygen",
             () -> new NoOxygenEffect(MobEffectCategory.HARMFUL, 3124687));
 
+    public static final RegistryObject<MobEffect> AFTER_DEATH_PROTECTION = MOB_EFFECTS.register("after_death_protection",
+            () -> new AfterDeathProtectionEffect(MobEffectCategory.BENEFICIAL, 3124687));
+
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }

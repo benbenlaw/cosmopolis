@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "cosmopolis:block/asteroid_bricks"
+  }
+}

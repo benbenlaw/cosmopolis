@@ -3,6 +3,7 @@ package com.benbenlaw.cosmopolis.block;
 import com.benbenlaw.cosmopolis.Cosmopolis;
 
 import com.benbenlaw.cosmopolis.block.custom.*;
+import com.benbenlaw.cosmopolis.block.entity.custom.AsteroidBlock;
 import com.benbenlaw.cosmopolis.item.ModCreativeModTab;
 import com.benbenlaw.cosmopolis.item.ModItems;
 import net.minecraft.network.chat.Component;
@@ -40,7 +41,7 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> ASTEROID_BLOCK = registerBlock("asteroid_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+            () -> new AsteroidBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> ASTEROID_STAIRS = registerBlock("asteroid_stairs",
             () -> new StairBlock(() -> ModBlocks.ASTEROID_BLOCK.get().defaultBlockState(),
@@ -50,6 +51,36 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> ASTEROID_WALL = registerBlock("asteroid_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+
+    //Asteroid Bricks
+
+    public static final RegistryObject<Block> ASTEROID_BRICKS = registerBlock("asteroid_bricks",
+            () -> new AsteroidBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ASTEROID_BRICK_STAIRS = registerBlock("asteroid_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.ASTEROID_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ASTEROID_BRICK_SLAB = registerBlock("asteroid_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ASTEROID_BRICK_WALL = registerBlock("asteroid_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+
+    //Asteroid Tiles
+
+    public static final RegistryObject<Block> ASTEROID_TILES = registerBlock("asteroid_tiles",
+            () -> new AsteroidBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ASTEROID_TILE_STAIRS = registerBlock("asteroid_tile_stairs",
+            () -> new StairBlock(() -> ModBlocks.ASTEROID_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ASTEROID_TILE_SLAB = registerBlock("asteroid_tile_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ASTEROID_TILE_WALL = registerBlock("asteroid_tile_wall",
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.0f, 6f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
     //Artificial Planks

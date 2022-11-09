@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "cosmopolis:block/asteroid_bricks",
+    "side": "cosmopolis:block/asteroid_bricks",
+    "top": "cosmopolis:block/asteroid_bricks"
+  }
+}

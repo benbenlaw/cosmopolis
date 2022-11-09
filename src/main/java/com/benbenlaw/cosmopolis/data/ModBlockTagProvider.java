@@ -7,6 +7,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagEntry;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.ForgeMod;
 import net.minecraftforge.common.Tags;
@@ -27,7 +28,17 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.ASTEROID_BLOCK.get())
                 .add(ModBlocks.ASTEROID_SLAB.get())
                 .add(ModBlocks.ASTEROID_STAIRS.get())
-                .add(ModBlocks.ASTEROID_WALL.get());
+                .add(ModBlocks.ASTEROID_WALL.get())
+
+                .add(ModBlocks.ASTEROID_BRICKS.get())
+                .add(ModBlocks.ASTEROID_BRICK_SLAB.get())
+                .add(ModBlocks.ASTEROID_BRICK_STAIRS.get())
+                .add(ModBlocks.ASTEROID_BRICK_WALL.get())
+        
+                .add(ModBlocks.ASTEROID_TILES.get())
+                .add(ModBlocks.ASTEROID_TILE_SLAB.get())
+                .add(ModBlocks.ASTEROID_TILE_STAIRS.get())
+                .add(ModBlocks.ASTEROID_TILE_WALL.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BLACKSTONE_DEBRIS_ORE.get())
@@ -89,7 +100,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(ModTags.Blocks.BANNED_IN_SPACE_BLOCKS)
                 .addTags(BlockTags.SAPLINGS)
-                .add(Blocks.ICE);
+                .addTags(BlockTags.CROPS)
+                .add(Blocks.SWEET_BERRY_BUSH);
 
         tag(ModTags.Blocks.VENUS_ORE_REPLACEABLES)
                 .add(Blocks.BLACKSTONE);
@@ -109,7 +121,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.ORES_OSMIUM).add(ModBlocks.BLACKSTONE_OSMIUM_ORE.get());
         tag(ModTags.Blocks.ORES_CHEESE).add(ModBlocks.BLACKSTONE_CHEESE_ORE.get());
 
-        tag(BlockTags.WALLS).add(ModBlocks.ASTEROID_WALL.get());
+        tag(BlockTags.WALLS)
+                .add(ModBlocks.ASTEROID_WALL.get())
+                .add(ModBlocks.ASTEROID_BRICK_WALL.get())
+                .add(ModBlocks.ASTEROID_TILE_WALL.get());
         tag(BlockTags.FENCES).add(ModBlocks.ARTIFICIAL_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(ModBlocks.ARTIFICIAL_FENCE_GATE.get());
 

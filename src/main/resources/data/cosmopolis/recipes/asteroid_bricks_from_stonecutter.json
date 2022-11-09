@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "cosmopolis:asteroid_block"
+  },
+  "result": "cosmopolis:asteroid_bricks"
+}

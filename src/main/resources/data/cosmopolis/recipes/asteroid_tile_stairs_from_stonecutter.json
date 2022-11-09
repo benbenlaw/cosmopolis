@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "cosmopolis:asteroid_tiles"
+  },
+  "result": "cosmopolis:asteroid_tile_stairs"
+}

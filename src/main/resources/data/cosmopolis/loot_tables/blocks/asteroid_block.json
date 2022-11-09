@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "cosmopolis:asteroid_block"
+          "name": "cosmopolis:asteroid_rock"
         }
       ],
       "rolls": 1.0

@@ -32,7 +32,7 @@ public class OrganicPowderItem extends Item {
 
         if (blockState.is(ModBlocks.ASTEROID_BLOCK.get()) && hand) {
             if (!world.isClientSide) {
-                world.setBlock(blockPos, ModBlocks.ARTIFICIAL_PLANKS.get().defaultBlockState(), 1);
+                world.setBlockAndUpdate(blockPos, ModBlocks.ARTIFICIAL_PLANKS.get().defaultBlockState());
                 player.playNotifySound(SoundEvents.AMETHYST_BLOCK_STEP, SoundSource.AMBIENT, 1.0f,1);
                 player.getMainHandItem().shrink(1);
             }

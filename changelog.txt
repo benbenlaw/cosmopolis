@@ -1,5 +1,53 @@
 Cosmopolis Mod Changelog
 
+1.16
+
+The Mars Update
+Added mars rovers and mars base structures to mars (base contains loot and alien artifacts)
+Red sandstone on mars below y level 0 will sometimes spawn a random gem from the forge gems tag
+    (includes vanilla lapis, quartz, diamond and emerald as well as mods that add there gems to the forge gems tag)
+Added crops and sweet berry bush to banned in space block tag
+Removed sweet berries from banned in space item tag (now edible again in space)
+Changed the way banned item in space work should make seeds never placeable in space biomes
+Added asteroid bricks, asteroid brick stairs, slabs and walls
+Added asteroid tiles, asteroid tile stairs, slabs and walls
+
+1.15
+
+ASteroid blocks now drop one asteroid rock when broken with a pickaxe
+Hammer now acts like a pickaxe
+Hammer loot table now controlled by the block instead of the hammer item, asteroid block when broken with hammer will drop the ice shard ect
+Slightly tweaked gravity effects on items
+Ice no longer on the banned in space tag
+Gravity now effects all living entities in space dimensions
+Oxygen now effects all living entities in space dimensions (enderman and blazes are exempt)
+Stone rock and asteroid rocks can now be made in the stone cutter
+Entities now die in space unless they are EnderMan, Blaze, Slime, MagmaCube, Endermite and Phantom
+
+
+1.14.8
+
+Added blaze and enderman spawning to venus
+
+1.14.7
+
+Sweet berries now added to banned in space tag
+Tagged tools to correct forge tags
+Hammer works as a paxel and should be able to break most block types
+Added JEI information to organic blocks
+
+1.14.6
+
+Now fixed server syncing issues
+
+1.14.5
+
+Maybe fixed server issues with block updates
+
+1.14.4
+
+Fixed organic seed block drops
+
 1.14.3
 
 Added "Alien Tech" item called Alien Artifact

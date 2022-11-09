@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "key": {
+    "A": {
+      "item": "cosmopolis:asteroid_bricks"
+    }
+  },
+  "result": {
+    "item": "cosmopolis:asteroid_tiles",
+    "count": 4
+  }
+}
