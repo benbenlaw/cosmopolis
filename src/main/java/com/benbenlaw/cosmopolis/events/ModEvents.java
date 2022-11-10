@@ -25,6 +25,7 @@ import net.minecraft.world.entity.monster.*;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
@@ -205,6 +206,25 @@ public class ModEvents {
                    if (Math.random() > CosmopolisConfigFile.gemsDropOnMars.get()) {
                       level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(),
                               new ItemStack(randomGem)));
+                  }
+               }
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void moonBlackstoneDropsPrismarine(BlockEvent.BreakEvent event) {
+
+        Level level = event.getPlayer().getLevel();
+        BlockPos pos = event.getPos();
+        BlockState block = event.getLevel().getBlockState(pos);
+
+        if (level.dimension().equals(ModDimensions.MOON)) {
+            if (block.is(Blocks.BLACKSTONE)) {
+               if (pos.getY() <=0 ) {
+                   if (Math.random() > CosmopolisConfigFile.prismarineDropsOnMoon.get()) {
+                      level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(),
+                              new ItemStack(Items.PRISMARINE_SHARD)));
                   }
                }
             }

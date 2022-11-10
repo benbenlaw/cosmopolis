@@ -29,7 +29,6 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Cosmopolis.MOD_ID);
 
-
     public static final RegistryObject<Block> GRAVITY_GENERATOR = registerBlock("gravity_generator",
             () -> new GravityGeneratorBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .requiresCorrectToolForDrops()

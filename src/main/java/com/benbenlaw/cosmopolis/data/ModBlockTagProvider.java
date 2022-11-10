@@ -53,10 +53,22 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.VENUS_PORTAL_FRAME.get())
                 .add(ModBlocks.MARS_PORTAL_FRAME.get())
                 .add(ModBlocks.MOON_PORTAL_FRAME.get())
+
                 .add(ModBlocks.ASTEROID_BLOCK.get())
                 .add(ModBlocks.ASTEROID_SLAB.get())
                 .add(ModBlocks.ASTEROID_STAIRS.get())
                 .add(ModBlocks.ASTEROID_WALL.get())
+
+                .add(ModBlocks.ASTEROID_BRICKS.get())
+                .add(ModBlocks.ASTEROID_BRICK_SLAB.get())
+                .add(ModBlocks.ASTEROID_BRICK_STAIRS.get())
+                .add(ModBlocks.ASTEROID_BRICK_WALL.get())
+
+                .add(ModBlocks.ASTEROID_TILES.get())
+                .add(ModBlocks.ASTEROID_TILE_SLAB.get())
+                .add(ModBlocks.ASTEROID_TILE_STAIRS.get())
+                .add(ModBlocks.ASTEROID_TILE_WALL.get())
+
                 .add(ModBlocks.GLOWSTONE_LANTERN.get())
                 .add(ModBlocks.BLACKSTONE_CHEESE_ORE.get())
                 .add(ModBlocks.BLACKSTONE_DEBRIS_ORE.get())

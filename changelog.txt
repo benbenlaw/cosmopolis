@@ -1,5 +1,13 @@
 Cosmopolis Mod Changelog
 
+1.16.2
+
+Fixed mining level on asteroid brick and tiles
+
+1.16.1
+
+Blackstone on the moon below y level 0 will sometimes drop prismarine
+
 1.16
 
 The Mars Update

@@ -8,6 +8,7 @@ public final class CosmopolisConfigFile {
     public static final ForgeConfigSpec SPEC;
 
     public static final ForgeConfigSpec.ConfigValue<Double> gemsDropOnMars;
+    public static final ForgeConfigSpec.ConfigValue<Double> prismarineDropsOnMoon;
     public static final ForgeConfigSpec.ConfigValue<Double> iceShardDropChance;
     public static final ForgeConfigSpec.ConfigValue<Double> waterDropChance;
     public static final ForgeConfigSpec.ConfigValue<Double> organicDropChance;
@@ -26,6 +27,9 @@ public final class CosmopolisConfigFile {
 
     static {
         BUILDER.push("Cosmopolis config file");
+
+        prismarineDropsOnMoon = BUILDER.comment("Chance that red sandstone on mars drops a random gem, 0.0 = always, 1.0 = never, 0.5 = 50% chance, default = 0.25")
+                .define("Prismarine on the Moon chance", 0.95);
 
         gemsDropOnMars = BUILDER.comment("Chance that red sandstone on mars drops a random gem, 0.0 = always, 1.0 = never, 0.5 = 50% chance, default = 0.25")
                 .define("Gems on Mars chance", 0.95);
