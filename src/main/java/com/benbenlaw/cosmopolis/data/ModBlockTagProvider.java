@@ -110,10 +110,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.MOON_FRAME_BLOCKS)
                 .add(ModBlocks.MOON_PORTAL_FRAME.get());
 
-        tag(ModTags.Blocks.BANNED_IN_SPACE_BLOCKS)
-                .addTags(BlockTags.SAPLINGS)
-                .addTags(BlockTags.CROPS)
-                .add(Blocks.SWEET_BERRY_BUSH);
+        tag(ModTags.Blocks.BANNED_IN_SPACE_BLOCKS);
+        //        .addTags(BlockTags.SAPLINGS)
+        //        .addTags(BlockTags.CROPS)
+        //        .add(Blocks.SWEET_BERRY_BUSH);
 
         tag(ModTags.Blocks.VENUS_ORE_REPLACEABLES)
                 .add(Blocks.BLACKSTONE);

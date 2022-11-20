@@ -1,5 +1,6 @@
 package com.benbenlaw.cosmopolis.block.custom;
 
+import com.benbenlaw.cosmopolis.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
@@ -27,7 +28,7 @@ public class OrganicPowderSeedBlock extends Block {
 
         if (player.hasCorrectToolForDrops(this.defaultBlockState())) {
 
-            List<Item> seeds = Objects.requireNonNull(ForgeRegistries.ITEMS.tags()).getTag(Tags.Items.SEEDS).stream().toList();
+            List<Item> seeds = Objects.requireNonNull(ForgeRegistries.ITEMS.tags()).getTag(ModTags.Items.ORGANIC_POWDER_SEED_SAPLING_DROPS).stream().toList();
             Random rand = new Random();
             Item randomSeed = seeds.get(rand.nextInt(seeds.size()));
             level.addFreshEntity(new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,

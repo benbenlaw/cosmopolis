@@ -48,6 +48,10 @@ public class ModTags {
         public static final TagKey<Item> ASTEROID_ROCKS = tag("asteroid_rocks");
         public static final TagKey<Item> BANNED_IN_SPACE_ITEMS = tag("banned_in_space_items");
 
+        public static final TagKey<Item> ORGANIC_POWDER_FUNGUS_BLOCK_DROPS = tag("organic_powder_fungus_block_drops");
+        public static final TagKey<Item> ORGANIC_POWDER_FUNGUS_SAPLING_DROPS = tag("organic_powder_sapling_block_drops");
+        public static final TagKey<Item> ORGANIC_POWDER_SEED_SAPLING_DROPS = tag("organic_powder_seed_block_drops");
+
         public static final TagKey<Item> ORES_URANIUM = forgeTag("ores/uranium");
         public static final TagKey<Item> ORES_OSMIUM = forgeTag("ores/osmium");
         public static final TagKey<Item> ORES_CHEESE = forgeTag("ores/cheese");
