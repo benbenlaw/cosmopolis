@@ -15,6 +15,7 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.InteractionHand;
@@ -60,18 +61,18 @@ import java.util.Random;
 public class ModEvents {
 
     @SubscribeEvent
-    public static void onAttributeCreate(EntityAttributeCreationEvent event) {
+    public static void onAttributeCreate(@NotNull EntityAttributeCreationEvent event) {
         event.put(ModEntities.UFO.get(), UFOEntity.createAttributes().build());
     }
 
     @SubscribeEvent
-    public static void onRegisterLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
+    public static void onRegisterLayers(EntityRenderersEvent.@NotNull RegisterLayerDefinitions event) {
         event.registerLayerDefinition(UFOModel.LAYER_LOCATION, UFOModel::createBodyLayer);
     }
 
     @OnlyIn(Dist.CLIENT)
     @SubscribeEvent
-    public static void onRegisterRenderer(EntityRenderersEvent.RegisterRenderers event) {
+    public static void onRegisterRenderer(EntityRenderersEvent.@NotNull RegisterRenderers event) {
         event.registerEntityRenderer(ModEntities.UFO.get(), UFORenderer::new);
     }
 
@@ -96,7 +97,7 @@ public class ModEvents {
     }
 
     @SubscribeEvent
-    public static void changeItemEntitiesGravity (ItemTossEvent event) {
+    public static void changeItemEntitiesGravity (@NotNull ItemTossEvent event) {
         ItemEntity entity = event.getEntity();
         Level level = entity.getLevel();
         BlockPos pos = entity.getOnPos();
@@ -110,7 +111,7 @@ public class ModEvents {
     }
 
     @SubscribeEvent
-    public static void changeEntityGravity (LivingEvent.LivingTickEvent event) {
+    public static void changeEntityGravity (LivingEvent.@NotNull LivingTickEvent event) {
 
         Entity entity = event.getEntity();
         Level level = entity.getLevel();
@@ -129,8 +130,6 @@ public class ModEvents {
         }
 
     }
-
-
 
     @SubscribeEvent
     public static void dealDamageToPlayers(TickEvent.@NotNull PlayerTickEvent event) {
@@ -155,7 +154,7 @@ public class ModEvents {
     }
 
     @SubscribeEvent
-    public static void dealDamageToEntities(LivingEvent.LivingTickEvent event) {
+    public static void dealDamageToEntities(LivingEvent.@NotNull LivingTickEvent event) {
 
         Entity entity = event.getEntity();
         Level level = entity.getLevel();
@@ -190,7 +189,7 @@ public class ModEvents {
 
 
     @SubscribeEvent
-    public static void marsSandstoneDropsGems(BlockEvent.BreakEvent event) {
+    public static void marsSandstoneDropsGems(BlockEvent.@NotNull BreakEvent event) {
 
         Level level = event.getPlayer().getLevel();
         BlockPos pos = event.getPos();
@@ -213,7 +212,7 @@ public class ModEvents {
     }
 
     @SubscribeEvent
-    public static void moonBlackstoneDropsPrismarine(BlockEvent.BreakEvent event) {
+    public static void moonBlackstoneDropsPrismarine(BlockEvent.@NotNull BreakEvent event) {
 
         Level level = event.getPlayer().getLevel();
         BlockPos pos = event.getPos();
@@ -242,50 +241,28 @@ public class ModEvents {
     }
 
     @SubscribeEvent
-    public static void bannedInSpaceBlocks(BlockEvent.@NotNull EntityPlaceEvent event) {
-
-        BlockState blockState = event.getPlacedBlock();
-
-        Level level = (Level) event.getLevel();
-        Entity player = event.getEntity();
-        Iterable<ItemStack> hand = player.getHandSlots();
-        BlockPos pos = event.getPos();
-        Holder<Biome> biome = event.getLevel().getBiome(pos);
-
-        if (!level.isClientSide()) {
-
-            if (blockState.is(ModTags.Blocks.BANNED_IN_SPACE_BLOCKS) || hand.equals(ModTags.Items.BANNED_IN_SPACE_ITEMS)) {
-                if (biome.is(ModTags.Biomes.NEEDS_SPACE_SUIT)) {
-                    event.setCanceled(true);
-                    player.sendSystemMessage(Component.translatable("This block can not be placed here!").withStyle(ChatFormatting.DARK_RED));
-                }
-            }
-        }
-    }
-
-    @SubscribeEvent
     public static void bannedInSpaceItems(PlayerInteractEvent.@NotNull RightClickBlock event) {
 
         Entity player = event.getEntity();
         Level level = player.getLevel();
         BlockPos pos = event.getPos();
+        BlockState state = event.getLevel().getBlockState(pos);
         Holder<Biome> biome = event.getLevel().getBiome(pos);
         ItemStack mainHandItem = event.getEntity().getItemInHand(InteractionHand.MAIN_HAND);
         ItemStack offHandItem = event.getEntity().getItemInHand(InteractionHand.OFF_HAND);
 
         if (!level.isClientSide()) {
-
-            if (mainHandItem.is(ModTags.Items.BANNED_IN_SPACE_ITEMS) && biome.is(ModTags.Biomes.NEEDS_SPACE_SUIT)) {
-                event.setCanceled(true);
-                player.sendSystemMessage(Component.translatable("This item can not be used here!").withStyle(ChatFormatting.DARK_RED));
-            }
-
-            if (offHandItem.is(ModTags.Items.BANNED_IN_SPACE_ITEMS) && biome.is(ModTags.Biomes.NEEDS_SPACE_SUIT)) {
-                event.setCanceled(true);
-                player.sendSystemMessage(Component.translatable("This item can not be used here!").withStyle(ChatFormatting.DARK_RED));
+            if (mainHandItem.is(Tags.Items.SEEDS) || offHandItem.is(Tags.Items.SEEDS) || mainHandItem.is(ModTags.Items.BANNED_IN_SPACE_ITEMS) || offHandItem.is(ModTags.Items.BANNED_IN_SPACE_ITEMS)) {
+                if (biome.is(ModTags.Biomes.NEEDS_SPACE_SUIT)) {
+                    if (state.is(Blocks.FARMLAND) || state.is(BlockTags.DIRT)) {
+                        event.setCanceled(true);
+                        player.sendSystemMessage(Component.translatable("This item can not be used here!").withStyle(ChatFormatting.DARK_RED));
+                    }
+                }
             }
         }
     }
+
 
     @SubscribeEvent
     public static void noTorches(BlockEvent.@NotNull EntityPlaceEvent event) {

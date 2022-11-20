@@ -1,5 +1,6 @@
 package com.benbenlaw.cosmopolis.block.custom;
 
+import com.benbenlaw.cosmopolis.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -24,7 +25,7 @@ public class OrganicPowderSaplingBlock extends Block {
 
         if (player.hasCorrectToolForDrops(this.defaultBlockState())) {
 
-            List<Item> saplings = Objects.requireNonNull(ForgeRegistries.ITEMS.tags()).getTag(ItemTags.SAPLINGS).stream().toList();
+            List<Item> saplings = Objects.requireNonNull(ForgeRegistries.ITEMS.tags()).getTag(ModTags.Items.ORGANIC_POWDER_FUNGUS_SAPLING_DROPS).stream().toList();
             Random rand = new Random();
             Item randomSapling = saplings.get(rand.nextInt(saplings.size()));
 

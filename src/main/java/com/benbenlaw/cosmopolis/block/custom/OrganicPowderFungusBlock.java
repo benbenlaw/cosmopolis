@@ -1,5 +1,6 @@
 package com.benbenlaw.cosmopolis.block.custom;
 
+import com.benbenlaw.cosmopolis.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
@@ -29,7 +30,7 @@ public class OrganicPowderFungusBlock extends Block {
 
         if (player.hasCorrectToolForDrops(this.defaultBlockState())) {
 
-            List<Item> fungus = Objects.requireNonNull(ForgeRegistries.ITEMS.tags()).getTag(Tags.Items.MUSHROOMS).stream().toList();
+            List<Item> fungus = Objects.requireNonNull(ForgeRegistries.ITEMS.tags()).getTag(ModTags.Items.ORGANIC_POWDER_FUNGUS_BLOCK_DROPS).stream().toList();
             Random rand = new Random();
             Item randomFungus = fungus.get(rand.nextInt(fungus.size()));
 

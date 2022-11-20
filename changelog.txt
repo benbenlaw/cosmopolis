@@ -1,5 +1,14 @@
 Cosmopolis Mod Changelog
 
+1.16.3
+
+Re-worked banned items in space events, checks for block states as well now.
+    Eg if a seed is used on a dirt block this is prevented. If a seed is used to open a chest this is allowed
+Re-worked organic powder blocks, now drop items from their own tag, eg 'organic_powder_fungus_block_drops' tag contains all mushrooms but other items can be added,
+Bamboo can now drop organic powder fungus blocks
+Cocoa Beans and Sugar Cane can now drop from organic powder seed block
+Warped and Crimson Fungus can now drop from organic powder mushroom blocks
+
 1.16.2
 
 Fixed mining level on asteroid brick and tiles
